@@ -1,0 +1,8 @@
+buildVariable: true
+familyName: Noto Sans Balinese
+googleFonts: true
+includeSubsets:
+- from: Noto Sans
+  name: GF_Latin_Core
+sources:
+- NotoSansBalinese.glyphs
