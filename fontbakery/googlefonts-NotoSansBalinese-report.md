@@ -37,25 +37,25 @@ Fontbakery version: 0.8.9
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
@@ -65,25 +65,25 @@ Fontbakery version: 0.8.9
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
 
 
@@ -143,58 +143,58 @@ Fontbakery version: 0.8.9
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
@@ -246,25 +246,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Does the font have any invalid language tags? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/layout.html#com.google.fonts/check/layout_valid_language_tags">com.google.fonts/check/layout_valid_language_tags</a>)</summary><div>
 
 
@@ -288,16 +288,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B23.conj.ya.u
+	* uni1B46.td
+	* uni1B49.conj.ya
+	* uni1B2F.conj.ya.u
+	* uni1B13.ra_uni1B2D.conj.wa
+	* uni1B23.conj.ra
+	* uni1B0D
+	* uni1B2A.td
+	* uni1B45.conj
 	* uni1B2A
-	* uni1B30.ra
-	* uni1B32.conj
-	* uni1B2A.ra
-	* uni1B48.conj.ra
-	* uni1B0E
-	* uni1B18.td
-	* uni1B45
-	* uni1B49.conj.ra and 121 more.
+	* uni1B30.conj and 121 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -309,29 +309,29 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -447,25 +447,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Does the font have any invalid language tags? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/layout.html#com.google.fonts/check/layout_valid_language_tags">com.google.fonts/check/layout_valid_language_tags</a>)</summary><div>
 
 
@@ -489,16 +489,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B23.conj.ya.u
-	* uni1B30.ra
-	* uni1B32.conj
-	* uni1B48.conj.ra
-	* uni1B45
-	* uni1B49.conj.ra
-	* uni1B47.td
-	* uni1B31.conj.ra
-	* uni1B7B
-	* uni1B14.ra and 59 more.
+	* uni1B46.td
+	* uni1B49.conj.ya
+	* uni1B13.ra_uni1B2D.conj.wa
+	* uni1B45.conj
+	* uni1B30.conj
+	* uni1B45.ra
+	* uni1B14.conj
+	* uni1B23.td
+	* uni1B48
+	* uni1B23.conj.ya.uu and 59 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -517,29 +517,29 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -651,25 +651,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Does the font have any invalid language tags? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/layout.html#com.google.fonts/check/layout_valid_language_tags">com.google.fonts/check/layout_valid_language_tags</a>)</summary><div>
 
 
@@ -693,16 +693,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B23.conj.ya.u
-	* uni1B32.conj
-	* uni1B48.conj.ra
-	* uni1B45
-	* uni1B31.conj.ra
-	* uni1B45.td
-	* uni1B5B
 	* uni1B46.td
-	* uni1B1A.conj.u
-	* uni1B4A.ra and 13 more.
+	* uni1B49.conj.ya
+	* uni1B45.ra
+	* uni1B31.conj.ra
+	* uni1B45
+	* uni1B32.conj
+	* uni1B4A.ra
+	* uni1B1B
+	* uni1B46
+	* uni1B46.ra and 13 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -714,29 +714,29 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -806,25 +806,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
+	- uni1B6E
+
+	- uni1B70
+
+	- uni1B6D
+
+	- uni1B73
+
 	- uni1B6C
 
 	- uni1B6F
 
-	- uni1B6E
-
-	- uni1B71
-
-	- uni1B38
-
-	- uni1B70
+	- uni1B72
 
 	- uni1B6B
 
-	- uni1B72
+	- uni1B38 
 
-	- uni1B6D 
-
-	- And uni1B73 [code: unattached-dotted-circle-marks]
+	- And uni1B71 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Does the font have any invalid language tags? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/layout.html#com.google.fonts/check/layout_valid_language_tags">com.google.fonts/check/layout_valid_language_tags</a>)</summary><div>
 
 
@@ -848,16 +848,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B23.conj.ya.u
+	* uni1B46.td
+	* uni1B49.conj.ya
+	* uni1B13.ra_uni1B2D.conj.wa
+	* uni1B23.conj.ra
+	* uni1B2A.td
+	* uni1B45.conj
 	* uni1B2A
-	* uni1B30.ra
-	* uni1B32.conj
-	* uni1B2A.ra
-	* uni1B48.conj.ra
-	* uni1B18.td
-	* uni1B45
-	* uni1B49.conj.ra
-	* uni1B47.td and 99 more.
+	* uni1B30.conj
+	* uni1B24.ra
+	* uni1B45.ra and 99 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -876,29 +876,29 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nonmarkingreturn
+	- uni1B1A.nya
+
+	- _244
+
+	- uni1B3A.5
+
+	- cereg5
+
+	- uni1B1A.2.nya
+
+	- uni1B7D
 
 	- cereg3
+
+	- nonmarkingreturn
 
 	- uni1B7E
 
 	- _128
 
-	- uni1B3E001
+	- cereg2 
 
-	- uni1B1A.2.nya
-
-	- uni1B3A.5
-
-	- cereg2
-
-	- _244
-
-	- uni1B7D
-
-	- uni1B1A.nya 
-
-	- And cereg5
+	- And uni1B3E001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 

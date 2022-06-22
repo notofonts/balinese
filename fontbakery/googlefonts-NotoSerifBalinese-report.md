@@ -27,25 +27,25 @@ Fontbakery version: 0.8.9
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni1B6E
-
-	- uni1B3A
-
-	- uni1B38
-
 	- uni1B42
 
-	- uni1B6D
-
-	- uni1B39
-
-	- uni1B72
+	- uni1B70
 
 	- uni1B01
 
-	- uni1B36
+	- uni1B73
 
-	- uni1B03 
+	- uni1B72
+
+	- uni1B6E
+
+	- uni1B6B
+
+	- uni1B6C
+
+	- uni1B34
+
+	- uni1B6F 
 
 	- And 10 more.
 
