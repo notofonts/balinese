@@ -1,5 +1,8 @@
 {
-.appVersion = "1359";
+.appVersion = "3072";
+DisplayStrings = (
+"/uni25CC"
+);
 classes = (
 {
 code = "uni1B13.sub uni1B14.sub uni1B15.sub uni1B16.sub uni1B17.sub uni1B18.sub uni1B19.sub uni1B1A.sub uni1B1B.sub uni1B1C.sub uni1B1D.sub uni1B1E.sub uni1B1F.sub uni1B20.sub uni1B21.sub uni1B22.sub uni1B23.sub uni1B24.sub uni1B25.sub uni1B26.sub uni1B29.sub uni1B2A.sub uni1B2B.sub uni1B2C.sub uni1B2D.sub uni1B2E.sub uni1B2F.sub uni1B30.sub uni1B33.sub uni1B45.sub uni1B46.sub uni1B47.sub uni1B49.sub uni1B4B.sub";
@@ -240,6 +243,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -262,10 +269,6 @@ value = "Noto is a trademark of Google LLC.";
 {
 name = versionString;
 value = "Version 2.003";
-},
-{
-name = "Use Typo Metrics";
-value = 1;
 }
 );
 date = "2017-09-24 05:42:43 +0000";
@@ -6664,7 +6667,7 @@ unicode = 1B3B;
 },
 {
 glyphname = uni1B3C;
-lastChange = "2017-12-01 22:29:26 +0000";
+lastChange = "2022-07-07 15:53:18 +0000";
 layers = (
 {
 components = (
@@ -6677,7 +6680,7 @@ transform = "{1, 0, 0, 1, -659, 0}";
 },
 {
 name = uni1B42;
-transform = "{1, 0, 0, 1, 78, 0}";
+transform = "{1, 0, 0, 1, -219, 180}";
 }
 );
 layerId = "3BC433F7-38BC-4C75-8B4E-78FBECB68114";
@@ -6691,7 +6694,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = uni1B3D;
-lastChange = "2017-12-01 22:29:26 +0000";
+lastChange = "2022-07-07 15:53:18 +0000";
 layers = (
 {
 components = (
@@ -6707,7 +6710,7 @@ transform = "{1, 0, 0, 1, -659, 0}";
 },
 {
 name = uni1B42;
-transform = "{1, 0, 0, 1, 78, 0}";
+transform = "{1, 0, 0, 1, -219, 180}";
 }
 );
 layerId = "3BC433F7-38BC-4C75-8B4E-78FBECB68114";
@@ -11294,9 +11297,59 @@ unicode = 200D;
 },
 {
 glyphname = uni25CC;
-lastChange = "2017-12-01 22:30:17 +0000";
+lastChange = "2022-07-07 15:53:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{564, -110}";
+},
+{
+name = Anchor13;
+position = "{658, -42}";
+},
+{
+name = Anchor14;
+position = "{769, 0}";
+},
+{
+name = Anchor15;
+position = "{930, 0}";
+},
+{
+name = Anchor16;
+position = "{611, -6}";
+},
+{
+name = Anchor18;
+position = "{-56, -489}";
+},
+{
+name = Anchor20;
+position = "{-56, -489}";
+},
+{
+name = Anchor22;
+position = "{0, 800}";
+},
+{
+name = Anchor24;
+position = "{-71, -127}";
+},
+{
+name = Anchor6;
+position = "{330, 610}";
+},
+{
+name = Anchor7;
+position = "{424, -48}";
+},
+{
+name = Anchor9;
+position = "{302, 622}";
+}
+);
 layerId = "3BC433F7-38BC-4C75-8B4E-78FBECB68114";
 paths = (
 {
