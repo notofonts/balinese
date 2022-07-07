@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10pt;
+	line-height: 13pt;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1000;
+	}
+	.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+	.tooltip:hover .tooltiptext {
+	visibility: visible;
+	}
+	           /* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-before{
+                color: red;
+                cursor: text;
+            }
+            .attrib-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .before .cell .after {
+            	display:  none;
+            }
+            .after .cell .before {
+            	display:  none;
+            }
+            .both .cell .before {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .after {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+
+	  
+	    @font-face { font-family: before; src: url(before.ttf); }
+	  
+
+	  
+	    @font-face { font-family: after; src: url(after.ttf); }
+	  
+
+	  
+
+	  
+	    .before { font-family: before; }
+	  
+
+	  
+	    .after { font-family: after; }
+	  
+
+	  
+	
+.cell{
+  position: relative;
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">Before</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     
+<div class="node" >
+maxp
+  <div class="node" style="display:none">
+  maxPoints
+    <span class="attrib-before">255</span> <span class="attrib-after">227</span>
+  </div>
+  <div class="node" style="display:none">
+  maxZones
+    <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+  </div>
+  <div class="node" style="display:none">
+  maxSizeOfInstructions
+    <span class="attrib-before">0</span> <span class="attrib-after">3596</span>
+  </div>
+  <div class="node" style="display:none">
+  maxStorage
+    <span class="attrib-before">0</span> <span class="attrib-after">144</span>
+  </div>
+  <div class="node" style="display:none">
+  maxCompositePoints
+    <span class="attrib-before">297</span> <span class="attrib-after">289</span>
+  </div>
+  <div class="node" style="display:none">
+  maxFunctionDefs
+    <span class="attrib-before">0</span> <span class="attrib-after">141</span>
+  </div>
+  <div class="node" style="display:none">
+  maxStackElements
+    <span class="attrib-before">0</span> <span class="attrib-after">276</span>
+  </div>
+  <div class="node" style="display:none">
+  maxTwilightPoints
+    <span class="attrib-before">0</span> <span class="attrib-after">80</span>
+  </div>
+</div>
+<div class="node" >
+cvt 
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">None</span> <span class="attrib-after">cvt </span>
+  </div>
+</div>
+<div class="node" >
+hmtx
+  <div class="node" style="display:none">
+  metrics
+    <div class="node" style="display:none">
+    error
+      <span class="attrib-before">There are 340 changes, check manually!</span> <span class="attrib-after"></span>
+    </div>
+  </div>
+</div>
+<div class="node" >
+fpgm
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">None</span> <span class="attrib-after">fpgm</span>
+  </div>
+</div>
+<div class="node" >
+name
+  <div class="node" style="display:none">
+  (1, 3, 1, 1033)
+    <span class="attrib-before">Noto Sans Balinese</span> <span class="attrib-after">Noto Sans Balinese SemiBold</span>
+  </div>
+  <div class="node" style="display:none">
+  (262, 3, 1, 1033)
+    <span class="attrib-before">Medium</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (25, 3, 1, 1033)
+    <span class="attrib-before">NotoSansBalinese</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (264, 1, 0, 0)
+    <span class="attrib-before">Bold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (264, 3, 1, 1033)
+    <span class="attrib-before">Bold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (259, 3, 1, 1033)
+    <span class="attrib-before">SemiBold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (261, 1, 0, 0)
+    <span class="attrib-before">Regular</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (262, 1, 0, 0)
+    <span class="attrib-before">Medium</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (261, 3, 1, 1033)
+    <span class="attrib-before">Regular</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (258, 3, 1, 1033)
+    <span class="attrib-before">Medium</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (4, 3, 1, 1033)
+    <span class="attrib-before">Noto Sans Balinese Regular</span> <span class="attrib-after">Noto Sans Balinese SemiBold</span>
+  </div>
+  <div class="node" style="display:none">
+  (3, 3, 1, 1033)
+    <span class="attrib-before">2.003;GOOG;NotoSansBalinese-Regular</span> <span class="attrib-after">2.003;GOOG;NotoSansBalinese-SemiBold</span>
+  </div>
+  <div class="node" style="display:none">
+  (260, 3, 1, 1033)
+    <span class="attrib-before">Bold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (5, 3, 1, 1033)
+    <span class="attrib-before">Version 2.003</span> <span class="attrib-after">Version 2.003; ttfautohint (v1.8.4.7-5d5b)</span>
+  </div>
+  <div class="node" style="display:none">
+  (257, 3, 1, 1033)
+    <span class="attrib-before">Regular</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (17, 3, 1, 1033)
+    <span class="attrib-before">None</span> <span class="attrib-after">SemiBold</span>
+  </div>
+  <div class="node" style="display:none">
+  (263, 3, 1, 1033)
+    <span class="attrib-before">SemiBold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (256, 3, 1, 1033)
+    <span class="attrib-before">Weight</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (263, 1, 0, 0)
+    <span class="attrib-before">SemiBold</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  (6, 3, 1, 1033)
+    <span class="attrib-before">NotoSansBalinese-Regular</span> <span class="attrib-after">NotoSansBalinese-SemiBold</span>
+  </div>
+  <div class="node" style="display:none">
+  (16, 3, 1, 1033)
+    <span class="attrib-before">None</span> <span class="attrib-after">Noto Sans Balinese</span>
+  </div>
+</div>
+<div class="node" >
+OS/2
+  <div class="node" style="display:none">
+  xAvgCharWidth
+    <span class="attrib-before">974</span> <span class="attrib-after">1022</span>
+  </div>
+  <div class="node" style="display:none">
+  panose
+    <div class="node" style="display:none">
+    bWeight
+      <span class="attrib-before">5</span> <span class="attrib-after">7</span>
+    </div>
+  </div>
+  <div class="node" style="display:none">
+  usWeightClass
+    <span class="attrib-before">400</span> <span class="attrib-after">600</span>
+  </div>
+</div>
+<div class="node" >
+head
+  <div class="node" style="display:none">
+  modified
+    <span class="attrib-before">3740054881</span> <span class="attrib-after">3740054905</span>
+  </div>
+  <div class="node" style="display:none">
+  flags
+    <span class="attrib-before">3</span> <span class="attrib-after">7</span>
+  </div>
+  <div class="node" style="display:none">
+  xMin
+    <span class="attrib-before">-1522</span> <span class="attrib-after">-1579</span>
+  </div>
+  <div class="node" style="display:none">
+  checkSumAdjustment
+    <span class="attrib-before">3468088492</span> <span class="attrib-after">58985191</span>
+  </div>
+  <div class="node" style="display:none">
+  yMax
+    <span class="attrib-before">1289</span> <span class="attrib-after">1342</span>
+  </div>
+  <div class="node" style="display:none">
+  xMax
+    <span class="attrib-before">3209</span> <span class="attrib-after">3560</span>
+  </div>
+</div>
+<div class="node" >
+HVAR
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">HVAR</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    Version
+      <span class="attrib-before">65536</span> <span class="attrib-after">None</span>
+    </div>
+    <div class="node" style="display:none">
+    VarStore
+      <div class="node" style="display:none">
+      Format
+        <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      VarRegionList
+        <div class="node" style="display:none">
+        RegionAxisCount
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        RegionCount
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        Region
+          <div class="node" style="display:none">
+          [0]
+            <div class="node" style="display:none">
+            VarRegionAxis
+              <div class="node" style="display:none">
+              [0]
+                <div class="node" style="display:none">
+                StartCoord
+                  <span class="attrib-before">0.0</span> <span class="attrib-after">None</span>
+                </div>
+                <div class="node" style="display:none">
+                PeakCoord
+                  <span class="attrib-before">1.0</span> <span class="attrib-after">None</span>
+                </div>
+                <div class="node" style="display:none">
+                EndCoord
+                  <span class="attrib-before">1.0</span> <span class="attrib-after">None</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      VarDataCount
+        <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      VarData
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          ItemCount
+            <span class="attrib-before">361</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          NumShorts
+            <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          VarRegionCount
+            <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          VarRegionIndex
+            <div class="node" style="display:none">
+            [0]
+              <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+            </div>
+          </div>
+          <div class="node" style="display:none">
+          Item
+            <div class="node" style="display:none">
+            error
+              <span class="attrib-before">There are 361 changes, check manually!</span> <span class="attrib-after"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+hhea
+  <div class="node" style="display:none">
+  xMaxExtent
+    <span class="attrib-before">3209</span> <span class="attrib-after">3560</span>
+  </div>
+  <div class="node" style="display:none">
+  minRightSideBearing
+    <span class="attrib-before">-586</span> <span class="attrib-after">-653</span>
+  </div>
+  <div class="node" style="display:none">
+  advanceWidthMax
+    <span class="attrib-before">3273</span> <span class="attrib-after">3598</span>
+  </div>
+  <div class="node" style="display:none">
+  minLeftSideBearing
+    <span class="attrib-before">-1522</span> <span class="attrib-after">-1579</span>
+  </div>
+</div>
+<div class="node" >
+fvar
+  <div class="node" style="display:none">
+  axes
+    <div class="node" style="display:none">
+    wght
+      <div class="node" style="display:none">
+      minValue
+        <span class="attrib-before">400.0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      maxValue
+        <span class="attrib-before">700.0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      defaultValue
+        <span class="attrib-before">400.0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      axisName
+        <span class="attrib-before">Weight</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+  </div>
+  <div class="node" style="display:none">
+  instances
+    <div class="node" style="display:none">
+    Regular
+      <div class="node" style="display:none">
+      coordinates
+        <div class="node" style="display:none">
+        wght
+          <span class="attrib-before">400.0</span> <span class="attrib-after">None</span>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    Medium
+      <div class="node" style="display:none">
+      coordinates
+        <div class="node" style="display:none">
+        wght
+          <span class="attrib-before">500.0</span> <span class="attrib-after">None</span>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    SemiBold
+      <div class="node" style="display:none">
+      coordinates
+        <div class="node" style="display:none">
+        wght
+          <span class="attrib-before">600.0</span> <span class="attrib-after">None</span>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    Bold
+      <div class="node" style="display:none">
+      coordinates
+        <div class="node" style="display:none">
+        wght
+          <span class="attrib-before">700.0</span> <span class="attrib-after">None</span>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+gvar
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">gvar</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  version
+    <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  reserved
+    <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  variations
+    <div class="node" style="display:none">
+    error
+      <span class="attrib-before">There are 352 changes, check manually!</span> <span class="attrib-after"></span>
+    </div>
+  </div>
+  <div class="node" style="display:none">
+  axisCount
+    <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  sharedTupleCount
+    <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  offsetToSharedTuples
+    <span class="attrib-before">744</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  glyphCount
+    <span class="attrib-before">361</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  flags
+    <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+  </div>
+  <div class="node" style="display:none">
+  offsetToGlyphVariationData
+    <span class="attrib-before">746</span> <span class="attrib-after">None</span>
+  </div>
+</div>
+<div class="node" >
+STAT
+  <div class="node" style="display:none">
+  axis values
+    <div class="node" style="display:none">
+    Regular
+      <div class="node" style="display:none">
+      format
+        <span class="attrib-before">3</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      AxisIndex
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Flags
+        <span class="attrib-before">2</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Value
+        <span class="attrib-before">400.0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    Medium
+      <div class="node" style="display:none">
+      format
+        <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      AxisIndex
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Value
+        <span class="attrib-before">500.0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    SemiBold
+      <div class="node" style="display:none">
+      format
+        <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      AxisIndex
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Value
+        <span class="attrib-before">600.0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    Bold
+      <div class="node" style="display:none">
+      format
+        <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      AxisIndex
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Flags
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      Value
+        <span class="attrib-before">700.0</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+  </div>
+  <div class="node" style="display:none">
+  design axis records
+    <div class="node" style="display:none">
+    wght
+      <div class="node" style="display:none">
+      order
+        <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+      </div>
+      <div class="node" style="display:none">
+      AxisName
+        <span class="attrib-before">Weight</span> <span class="attrib-after">None</span>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+	    
+        
+      <div class="box">
+      <div class="box-title">glyphs: modified</div>
+      <span class="before" style="font-size: 32pt">
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬚ</span>
+        <span class="before">ᬚ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1A<br>
+            gids: [31]<br>
+            diff: 1.2058891678283372
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬎ</span>
+        <span class="before">ᬎ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0E<br>
+            gids: [19]<br>
+            diff: 1.3134943282774347
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭒</span>
+        <span class="before">᭒</span>
+        <span class="tooltiptext">
+            glyph: uni1B52<br>
+            gids: [84]<br>
+            diff: 1.4420129106758508
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬍ</span>
+        <span class="before">ᬍ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0D<br>
+            gids: [18]<br>
+            diff: 1.4420129106758508
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭢</span>
+        <span class="before">᭢</span>
+        <span class="tooltiptext">
+            glyph: uni1B62<br>
+            gids: [100]<br>
+            diff: 1.4793919326226408
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬑ</span>
+        <span class="before">ᬑ</span>
+        <span class="tooltiptext">
+            glyph: uni1B11<br>
+            gids: [22]<br>
+            diff: 1.6524852028038648
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭹</span>
+        <span class="before">᭹</span>
+        <span class="tooltiptext">
+            glyph: uni1B79<br>
+            gids: [123]<br>
+            diff: 1.7892622056365253
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭪</span>
+        <span class="before">᭪</span>
+        <span class="tooltiptext">
+            glyph: uni1B6A<br>
+            gids: [108]<br>
+            diff: 2.0426208951472797
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬇ</span>
+        <span class="before">ᬇ</span>
+        <span class="tooltiptext">
+            glyph: uni1B07<br>
+            gids: [12]<br>
+            diff: 2.141104497797534
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬒ</span>
+        <span class="before">ᬒ</span>
+        <span class="tooltiptext">
+            glyph: uni1B12<br>
+            gids: [23]<br>
+            diff: 2.2769003796178553
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭓</span>
+        <span class="before">᭓</span>
+        <span class="tooltiptext">
+            glyph: uni1B53<br>
+            gids: [85]<br>
+            diff: 2.297235297077962
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬜ</span>
+        <span class="before">ᬜ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1C<br>
+            gids: [34]<br>
+            diff: 2.376690655620716
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭶</span>
+        <span class="before">᭶</span>
+        <span class="tooltiptext">
+            glyph: uni1B76<br>
+            gids: [120]<br>
+            diff: 2.682310871513142
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬈ</span>
+        <span class="before">ᬈ</span>
+        <span class="tooltiptext">
+            glyph: uni1B08<br>
+            gids: [13]<br>
+            diff: 2.703353067971647
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬹ</span>
+        <span class="before">ᬹ</span>
+        <span class="tooltiptext">
+            glyph: uni1B39<br>
+            gids: [63]<br>
+            diff: 2.782533934853817
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬿ</span>
+        <span class="before">ᬿ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3F<br>
+            gids: [69]<br>
+            diff: 2.7882708077305423
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬺ</span>
+        <span class="before">ᬺ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3A<br>
+            gids: [64]<br>
+            diff: 2.805343073876559
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭁ</span>
+        <span class="before">ᭁ</span>
+        <span class="tooltiptext">
+            glyph: uni1B41<br>
+            gids: [71]<br>
+            diff: 2.9589417483510525
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬉ</span>
+        <span class="before">ᬉ</span>
+        <span class="tooltiptext">
+            glyph: uni1B09<br>
+            gids: [14]<br>
+            diff: 2.9847409049467255
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬄ</span>
+        <span class="before">ᬄ</span>
+        <span class="tooltiptext">
+            glyph: uni1B04<br>
+            gids: [9]<br>
+            diff: 3.0349429448793086
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬧ</span>
+        <span class="before">ᬧ</span>
+        <span class="tooltiptext">
+            glyph: uni1B27<br>
+            gids: [45]<br>
+            diff: 3.1706554709697405
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬞ</span>
+        <span class="before">ᬞ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1E<br>
+            gids: [36]<br>
+            diff: 3.253599653572611
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬖ</span>
+        <span class="before">ᬖ</span>
+        <span class="tooltiptext">
+            glyph: uni1B16<br>
+            gids: [27]<br>
+            diff: 3.3120372372772255
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬝ</span>
+        <span class="before">ᬝ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1D<br>
+            gids: [35]<br>
+            diff: 3.3467982427826684
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬩ</span>
+        <span class="before">ᬩ</span>
+        <span class="tooltiptext">
+            glyph: uni1B29<br>
+            gids: [47]<br>
+            diff: 3.385046453805545
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭐</span>
+        <span class="before">᭐</span>
+        <span class="tooltiptext">
+            glyph: uni1B50<br>
+            gids: [82]<br>
+            diff: 3.4476063847122704
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭵</span>
+        <span class="before">᭵</span>
+        <span class="tooltiptext">
+            glyph: uni1B75<br>
+            gids: [119]<br>
+            diff: 3.4476063847122704
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭴</span>
+        <span class="before">᭴</span>
+        <span class="tooltiptext">
+            glyph: uni1B74<br>
+            gids: [118]<br>
+            diff: 3.49414155118425
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬭ</span>
+        <span class="before">ᬭ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2D<br>
+            gids: [51]<br>
+            diff: 3.527354076811914
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭇ</span>
+        <span class="before">ᭇ</span>
+        <span class="tooltiptext">
+            glyph: uni1B47<br>
+            gids: [77]<br>
+            diff: 3.543313271597179
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬢ</span>
+        <span class="before">ᬢ</span>
+        <span class="tooltiptext">
+            glyph: uni1B22<br>
+            gids: [40]<br>
+            diff: 3.5558877433771876
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬻ</span>
+        <span class="before">ᬻ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3B<br>
+            gids: [65]<br>
+            diff: 3.703028422906066
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬵ</span>
+        <span class="before">ᬵ</span>
+        <span class="tooltiptext">
+            glyph: uni1B35<br>
+            gids: [59]<br>
+            diff: 3.7378626542600206
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬸ</span>
+        <span class="before">ᬸ</span>
+        <span class="tooltiptext">
+            glyph: uni1B38<br>
+            gids: [62]<br>
+            diff: 3.7385635390189136
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">◌</span>
+        <span class="before">◌</span>
+        <span class="tooltiptext">
+            glyph: uni25CC<br>
+            gids: [133]<br>
+            diff: 3.784810991150773
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭭</span>
+        <span class="before">᭭</span>
+        <span class="tooltiptext">
+            glyph: uni1B6D<br>
+            gids: [111]<br>
+            diff: 3.8282887767231184
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬃ</span>
+        <span class="before">ᬃ</span>
+        <span class="tooltiptext">
+            glyph: uni1B03<br>
+            gids: [8]<br>
+            diff: 3.9253180587193572
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬀ</span>
+        <span class="before">ᬀ</span>
+        <span class="tooltiptext">
+            glyph: uni1B00<br>
+            gids: [5]<br>
+            diff: 3.9333112037790756
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬠ</span>
+        <span class="before">ᬠ</span>
+        <span class="tooltiptext">
+            glyph: uni1B20<br>
+            gids: [38]<br>
+            diff: 4.06169506459592
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭲</span>
+        <span class="before">᭲</span>
+        <span class="tooltiptext">
+            glyph: uni1B72<br>
+            gids: [116]<br>
+            diff: 4.0958718353664985
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭄</span>
+        <span class="before">᭄</span>
+        <span class="tooltiptext">
+            glyph: uni1B44<br>
+            gids: [74]<br>
+            diff: 4.097088282592121
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭷</span>
+        <span class="before">᭷</span>
+        <span class="tooltiptext">
+            glyph: uni1B77<br>
+            gids: [121]<br>
+            diff: 4.200686558812417
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭥</span>
+        <span class="before">᭥</span>
+        <span class="tooltiptext">
+            glyph: uni1B65<br>
+            gids: [103]<br>
+            diff: 4.22393811570195
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭚</span>
+        <span class="before">᭚</span>
+        <span class="tooltiptext">
+            glyph: uni1B5A<br>
+            gids: [92]<br>
+            diff: 4.310197051829886
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬘ</span>
+        <span class="before">ᬘ</span>
+        <span class="tooltiptext">
+            glyph: uni1B18<br>
+            gids: [29]<br>
+            diff: 4.320044298559634
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬥ</span>
+        <span class="before">ᬥ</span>
+        <span class="tooltiptext">
+            glyph: uni1B25<br>
+            gids: [43]<br>
+            diff: 4.330324759315531
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬌ</span>
+        <span class="before">ᬌ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0C<br>
+            gids: [17]<br>
+            diff: 4.45706135646926
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬳ</span>
+        <span class="before">ᬳ</span>
+        <span class="tooltiptext">
+            glyph: uni1B33<br>
+            gids: [57]<br>
+            diff: 4.461966606701777
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭡</span>
+        <span class="before">᭡</span>
+        <span class="tooltiptext">
+            glyph: uni1B61<br>
+            gids: [99]<br>
+            diff: 4.478074702141017
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬮ</span>
+        <span class="before">ᬮ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2E<br>
+            gids: [52]<br>
+            diff: 4.617451499535812
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭯</span>
+        <span class="before">᭯</span>
+        <span class="tooltiptext">
+            glyph: uni1B6F<br>
+            gids: [113]<br>
+            diff: 4.624305892154075
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬪ</span>
+        <span class="before">ᬪ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2A<br>
+            gids: [48]<br>
+            diff: 4.799979017028089
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬽ</span>
+        <span class="before">ᬽ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3D<br>
+            gids: [67]<br>
+            diff: 4.837626255868105
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭠</span>
+        <span class="before">᭠</span>
+        <span class="tooltiptext">
+            glyph: uni1B60<br>
+            gids: [98]<br>
+            diff: 4.9592412716016625
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭈ</span>
+        <span class="before">ᭈ</span>
+        <span class="tooltiptext">
+            glyph: uni1B48<br>
+            gids: [78]<br>
+            diff: 5.091554805818444
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬼ</span>
+        <span class="before">ᬼ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3C<br>
+            gids: [66]<br>
+            diff: 5.216998091361903
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬙ</span>
+        <span class="before">ᬙ</span>
+        <span class="tooltiptext">
+            glyph: uni1B19<br>
+            gids: [30]<br>
+            diff: 5.242454731306334
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭛</span>
+        <span class="before">᭛</span>
+        <span class="tooltiptext">
+            glyph: uni1B5B<br>
+            gids: [93]<br>
+            diff: 5.374131236740392
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬷ</span>
+        <span class="before">ᬷ</span>
+        <span class="tooltiptext">
+            glyph: uni1B37<br>
+            gids: [61]<br>
+            diff: 5.419921293839883
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬟ</span>
+        <span class="before">ᬟ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1F<br>
+            gids: [37]<br>
+            diff: 5.46455594144715
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬶ</span>
+        <span class="before">ᬶ</span>
+        <span class="tooltiptext">
+            glyph: uni1B36<br>
+            gids: [60]<br>
+            diff: 5.467036814841504
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬤ</span>
+        <span class="before">ᬤ</span>
+        <span class="tooltiptext">
+            glyph: uni1B24<br>
+            gids: [42]<br>
+            diff: 5.48428606645484
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭩</span>
+        <span class="before">᭩</span>
+        <span class="tooltiptext">
+            glyph: uni1B69<br>
+            gids: [107]<br>
+            diff: 5.493827522936926
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭃ</span>
+        <span class="before">ᭃ</span>
+        <span class="tooltiptext">
+            glyph: uni1B43<br>
+            gids: [73]<br>
+            diff: 5.555550339351716
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭉ</span>
+        <span class="before">ᭉ</span>
+        <span class="tooltiptext">
+            glyph: uni1B49<br>
+            gids: [79]<br>
+            diff: 5.717503656874768
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭋ</span>
+        <span class="before">ᭋ</span>
+        <span class="tooltiptext">
+            glyph: uni1B4B<br>
+            gids: [81]<br>
+            diff: 5.83903233237616
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬣ</span>
+        <span class="before">ᬣ</span>
+        <span class="tooltiptext">
+            glyph: uni1B23<br>
+            gids: [41]<br>
+            diff: 5.857006273230862
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭙</span>
+        <span class="before">᭙</span>
+        <span class="tooltiptext">
+            glyph: uni1B59<br>
+            gids: [91]<br>
+            diff: 5.900666702271718
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭆ</span>
+        <span class="before">ᭆ</span>
+        <span class="tooltiptext">
+            glyph: uni1B46<br>
+            gids: [76]<br>
+            diff: 5.95643246082203
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭰</span>
+        <span class="before">᭰</span>
+        <span class="tooltiptext">
+            glyph: uni1B70<br>
+            gids: [114]<br>
+            diff: 5.980939383029087
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭊ</span>
+        <span class="before">ᭊ</span>
+        <span class="tooltiptext">
+            glyph: uni1B4A<br>
+            gids: [80]<br>
+            diff: 6.016089841842327
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬊ</span>
+        <span class="before">ᬊ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0A<br>
+            gids: [15]<br>
+            diff: 6.052391103200999
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭂ</span>
+        <span class="before">ᭂ</span>
+        <span class="tooltiptext">
+            glyph: uni1B42<br>
+            gids: [72]<br>
+            diff: 6.313665138902868
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬆ</span>
+        <span class="before">ᬆ</span>
+        <span class="tooltiptext">
+            glyph: uni1B06<br>
+            gids: [11]<br>
+            diff: 6.432492999242637
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬬ</span>
+        <span class="before">ᬬ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2C<br>
+            gids: [50]<br>
+            diff: 6.485274626633527
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭅ</span>
+        <span class="before">ᭅ</span>
+        <span class="tooltiptext">
+            glyph: uni1B45<br>
+            gids: [75]<br>
+            diff: 6.604079812108829
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬰ</span>
+        <span class="before">ᬰ</span>
+        <span class="tooltiptext">
+            glyph: uni1B30<br>
+            gids: [54]<br>
+            diff: 6.704107671453826
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬕ</span>
+        <span class="before">ᬕ</span>
+        <span class="tooltiptext">
+            glyph: uni1B15<br>
+            gids: [26]<br>
+            diff: 6.8239324946940405
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬯ</span>
+        <span class="before">ᬯ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2F<br>
+            gids: [53]<br>
+            diff: 6.830810101340046
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬡ</span>
+        <span class="before">ᬡ</span>
+        <span class="tooltiptext">
+            glyph: uni1B21<br>
+            gids: [39]<br>
+            diff: 6.844381135831525
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭫</span>
+        <span class="before">᭫</span>
+        <span class="tooltiptext">
+            glyph: uni1B6B<br>
+            gids: [109]<br>
+            diff: 6.85255510828111
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬓ</span>
+        <span class="before">ᬓ</span>
+        <span class="tooltiptext">
+            glyph: uni1B13<br>
+            gids: [24]<br>
+            diff: 6.86678110938759
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬋ</span>
+        <span class="before">ᬋ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0B<br>
+            gids: [16]<br>
+            diff: 6.980664101994097
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬦ</span>
+        <span class="before">ᬦ</span>
+        <span class="tooltiptext">
+            glyph: uni1B26<br>
+            gids: [44]<br>
+            diff: 7.003165405112315
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭬</span>
+        <span class="before">᭬</span>
+        <span class="tooltiptext">
+            glyph: uni1B6C<br>
+            gids: [110]<br>
+            diff: 7.109606373255878
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬔ</span>
+        <span class="before">ᬔ</span>
+        <span class="tooltiptext">
+            glyph: uni1B14<br>
+            gids: [25]<br>
+            diff: 7.264943263744462
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭟</span>
+        <span class="before">᭟</span>
+        <span class="tooltiptext">
+            glyph: uni1B5F<br>
+            gids: [97]<br>
+            diff: 7.374417517327238
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭦</span>
+        <span class="before">᭦</span>
+        <span class="tooltiptext">
+            glyph: uni1B66<br>
+            gids: [104]<br>
+            diff: 7.478009218952309
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭔</span>
+        <span class="before">᭔</span>
+        <span class="tooltiptext">
+            glyph: uni1B54<br>
+            gids: [86]<br>
+            diff: 7.499126743213259
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭼</span>
+        <span class="before">᭼</span>
+        <span class="tooltiptext">
+            glyph: uni1B7C<br>
+            gids: [126]<br>
+            diff: 7.847849434122276
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭞</span>
+        <span class="before">᭞</span>
+        <span class="tooltiptext">
+            glyph: uni1B5E<br>
+            gids: [96]<br>
+            diff: 8.133869286578769
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬱ</span>
+        <span class="before">ᬱ</span>
+        <span class="tooltiptext">
+            glyph: uni1B31<br>
+            gids: [55]<br>
+            diff: 8.367271183109096
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭧</span>
+        <span class="before">᭧</span>
+        <span class="tooltiptext">
+            glyph: uni1B67<br>
+            gids: [105]<br>
+            diff: 8.398984312312182
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬲ</span>
+        <span class="before">ᬲ</span>
+        <span class="tooltiptext">
+            glyph: uni1B32<br>
+            gids: [56]<br>
+            diff: 8.598699748895205
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬅ</span>
+        <span class="before">ᬅ</span>
+        <span class="tooltiptext">
+            glyph: uni1B05<br>
+            gids: [10]<br>
+            diff: 8.88190791818285
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬏ</span>
+        <span class="before">ᬏ</span>
+        <span class="tooltiptext">
+            glyph: uni1B0F<br>
+            gids: [20]<br>
+            diff: 9.133798354789494
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭖</span>
+        <span class="before">᭖</span>
+        <span class="tooltiptext">
+            glyph: uni1B56<br>
+            gids: [88]<br>
+            diff: 9.139337317751146
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭗</span>
+        <span class="before">᭗</span>
+        <span class="tooltiptext">
+            glyph: uni1B57<br>
+            gids: [89]<br>
+            diff: 9.300117952346259
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭕</span>
+        <span class="before">᭕</span>
+        <span class="tooltiptext">
+            glyph: uni1B55<br>
+            gids: [87]<br>
+            diff: 9.524069519308561
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">?</span>
+        <span class="before">?</span>
+        <span class="tooltiptext">
+            glyph: question<br>
+            gids: [352]<br>
+            diff: 10.96130242430678
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬨ</span>
+        <span class="before">ᬨ</span>
+        <span class="tooltiptext">
+            glyph: uni1B28<br>
+            gids: [46]<br>
+            diff: 10.989526120562088
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭣</span>
+        <span class="before">᭣</span>
+        <span class="tooltiptext">
+            glyph: uni1B63<br>
+            gids: [101]<br>
+            diff: 11.16855411762755
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭑</span>
+        <span class="before">᭑</span>
+        <span class="tooltiptext">
+            glyph: uni1B51<br>
+            gids: [83]<br>
+            diff: 11.945872593565817
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭜</span>
+        <span class="before">᭜</span>
+        <span class="tooltiptext">
+            glyph: uni1B5C<br>
+            gids: [94]<br>
+            diff: 12.388345630199792
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬫ</span>
+        <span class="before">ᬫ</span>
+        <span class="tooltiptext">
+            glyph: uni1B2B<br>
+            gids: [49]<br>
+            diff: 12.800134204873762
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭝</span>
+        <span class="before">᭝</span>
+        <span class="tooltiptext">
+            glyph: uni1B5D<br>
+            gids: [95]<br>
+            diff: 12.88682899972625
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᬴</span>
+        <span class="before">᬴</span>
+        <span class="tooltiptext">
+            glyph: uni1B34<br>
+            gids: [58]<br>
+            diff: 13.578905497426415
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬐ</span>
+        <span class="before">ᬐ</span>
+        <span class="tooltiptext">
+            glyph: uni1B10<br>
+            gids: [21]<br>
+            diff: 14.410617647363608
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬂ</span>
+        <span class="before">ᬂ</span>
+        <span class="tooltiptext">
+            glyph: uni1B02<br>
+            gids: [7]<br>
+            diff: 14.715589390260025
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬛ</span>
+        <span class="before">ᬛ</span>
+        <span class="tooltiptext">
+            glyph: uni1B1B<br>
+            gids: [33]<br>
+            diff: 14.790849177484144
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬁ</span>
+        <span class="before">ᬁ</span>
+        <span class="tooltiptext">
+            glyph: uni1B01<br>
+            gids: [6]<br>
+            diff: 15.207611079879008
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭱</span>
+        <span class="before">᭱</span>
+        <span class="tooltiptext">
+            glyph: uni1B71<br>
+            gids: [115]<br>
+            diff: 15.210760532182872
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭳</span>
+        <span class="before">᭳</span>
+        <span class="tooltiptext">
+            glyph: uni1B73<br>
+            gids: [117]<br>
+            diff: 15.248637970351488
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭤</span>
+        <span class="before">᭤</span>
+        <span class="tooltiptext">
+            glyph: uni1B64<br>
+            gids: [102]<br>
+            diff: 15.646154280723053
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭺</span>
+        <span class="before">᭺</span>
+        <span class="tooltiptext">
+            glyph: uni1B7A<br>
+            gids: [124]<br>
+            diff: 17.273927058564627
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭮</span>
+        <span class="before">᭮</span>
+        <span class="tooltiptext">
+            glyph: uni1B6E<br>
+            gids: [112]<br>
+            diff: 17.450038681949362
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭘</span>
+        <span class="before">᭘</span>
+        <span class="tooltiptext">
+            glyph: uni1B58<br>
+            gids: [90]<br>
+            diff: 40.94612075321521
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᭀ</span>
+        <span class="before">ᭀ</span>
+        <span class="tooltiptext">
+            glyph: uni1B40<br>
+            gids: [70]<br>
+            diff: 41.311154987227724
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬾ</span>
+        <span class="before">ᬾ</span>
+        <span class="tooltiptext">
+            glyph: uni1B3E<br>
+            gids: [68]<br>
+            diff: 42.1345670078424
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᬗ</span>
+        <span class="before">ᬗ</span>
+        <span class="tooltiptext">
+            glyph: uni1B17<br>
+            gids: [28]<br>
+            diff: 44.13433080024699
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">᭸</span>
+        <span class="before">᭸</span>
+        <span class="tooltiptext">
+            glyph: uni1B78<br>
+            gids: [122]<br>
+            diff: 46.841819048282225
+        </span>
+    </div>
+</div>
+              </div>
+            
+        
+          </span>
+	    
+       </div>
+    
+    </div>
+
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "before"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "before") {
+	  POSITION = "after"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("before", "after")
+            item.lastElementChild.className = item.lastElementChild.className.replace("before", "after")
+	    fontToggle.textContent = "After"
+	  }
+	  } else if (POSITION === "after") {
+	  POSITION = "both"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("after", "both")
+            item.lastElementChild.className = item.lastElementChild.className.replace("after", "both")
+	    fontToggle.textContent = "Both"
+	  }
+
+	  } else {
+	  POSITION = "before"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("both", "before")
+            item.lastElementChild.className = item.lastElementChild.className.replace("both", "before")
+	    fontToggle.textContent = "Before"
+	  }
+	}
+	}
+	fontToggle.addEventListener("click", switchFonts);
+	</script>
+    <script>
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    </script>
+</html>
