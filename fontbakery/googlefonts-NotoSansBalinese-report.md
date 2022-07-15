@@ -22,16 +22,16 @@ Fontbakery version: 0.8.9
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B1E.ra
-	* uni1B48
-	* uni1B30.td
-	* uni1B23.conj.ya.uu
-	* uni1B1A.conj.u
-	* uni1B48.td
-	* uni1B0D
-	* uni1B1C.ra
-	* uni1B15
-	* uni1B1D.td and 121 more.
+	* uni1B14.ra
+	* uni1B2C.conj.1
+	* uni1B1B.td
+	* uni1B13.conj
+	* uni1B12
+	* uni1B49.conj.ya.uu
+	* uni1B31
+	* uni1B26
+	* uni1B31.td
+	* uni1B2A.ra and 121 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -43,29 +43,29 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- cereg2
+	- uni1B1A.2.nya
+
+	- cereg5
 
 	- _128
 
 	- uni1B1A.nya
 
-	- uni1B3A.5
-
-	- uni1B7E
+	- uni1B3E001
 
 	- _244
 
-	- uni1B3E001
+	- nonmarkingreturn
 
-	- uni1B1A.2.nya
+	- uni1B3A.5
 
-	- cereg5
+	- cereg3
 
 	- uni1B7D
 
-	- cereg3 
+	- cereg2 
 
-	- And nonmarkingreturn
+	- And uni1B7E
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -181,16 +181,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B48
-	* uni1B2D.conj.ya
-	* uni1B23.conj.ya.uu
-	* uni1B1A.conj.u
-	* uni1B48.td
-	* uni1B15
+	* uni1B14.ra
+	* uni1B1B.td
+	* uni1B13.conj
 	* uni1B26
-	* uni1B13.ra_uni1B2D.conj.wa
-	* uni1B5B
-	* uni1B77 and 59 more.
+	* uni1B31.td
+	* uni1B26.ra
+	* uni1B32.conj
+	* uni1B15.ra
+	* uni1B49.conj
+	* uni1B30.ra and 59 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -209,29 +209,29 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- cereg2
+	- uni1B1A.2.nya
+
+	- cereg5
 
 	- _128
 
 	- uni1B1A.nya
 
-	- uni1B3A.5
-
-	- uni1B7E
+	- uni1B3E001
 
 	- _244
 
-	- uni1B3E001
+	- nonmarkingreturn
 
-	- uni1B1A.2.nya
+	- uni1B3A.5
 
-	- cereg5
+	- cereg3
 
 	- uni1B7D
 
-	- cereg3 
+	- cereg2 
 
-	- And nonmarkingreturn
+	- And uni1B7E
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -343,16 +343,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B2D.conj.ya
-	* uni1B1A.conj.u
-	* uni1B5B
-	* uni1B4A.ra
-	* uni1B45.ra
-	* uni1B49.conj.ya.td
-	* uni1B1B
-	* uni1B10
+	* uni1B1B.td
+	* uni1B32.conj
+	* uni1B31.conj
 	* uni1B46.td
-	* uni1B45 and 13 more.
+	* uni1B05
+	* uni1B49.conj.ya
+	* uni1B45.td
+	* uni1B45.ra
+	* uni1B2D.conj.ya
+	* uni1B4A and 13 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -364,29 +364,29 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- cereg2
+	- uni1B1A.2.nya
+
+	- cereg5
 
 	- _128
 
 	- uni1B1A.nya
 
-	- uni1B3A.5
-
-	- uni1B7E
+	- uni1B3E001
 
 	- _244
 
-	- uni1B3E001
+	- nonmarkingreturn
 
-	- uni1B1A.2.nya
+	- uni1B3A.5
 
-	- cereg5
+	- cereg3
 
 	- uni1B7D
 
-	- cereg3 
+	- cereg2 
 
-	- And nonmarkingreturn
+	- And uni1B7E
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -456,16 +456,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni1B48
-	* uni1B30.td
-	* uni1B2D.conj.ya
-	* uni1B23.conj.ya.uu
-	* uni1B1A.conj.u
-	* uni1B48.td
-	* uni1B1C.ra
-	* uni1B15
-	* uni1B1D.td
-	* uni1B26 and 99 more.
+	* uni1B14.ra
+	* uni1B1B.td
+	* uni1B13.conj
+	* uni1B31
+	* uni1B26
+	* uni1B31.td
+	* uni1B2A.ra
+	* uni1B4B.td
+	* uni1B26.ra
+	* uni1B32.conj and 99 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -484,29 +484,29 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- cereg2
+	- uni1B1A.2.nya
+
+	- cereg5
 
 	- _128
 
 	- uni1B1A.nya
 
-	- uni1B3A.5
-
-	- uni1B7E
+	- uni1B3E001
 
 	- _244
 
-	- uni1B3E001
+	- nonmarkingreturn
 
-	- uni1B1A.2.nya
+	- uni1B3A.5
 
-	- cereg5
+	- cereg3
 
 	- uni1B7D
 
-	- cereg3 
+	- cereg2 
 
-	- And nonmarkingreturn
+	- And uni1B7E
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -635,29 +635,29 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- cereg2
+	- uni1B1A.2.nya
+
+	- cereg5
 
 	- _128
 
 	- uni1B1A.nya
 
-	- uni1B3A.5
-
-	- uni1B7E
+	- uni1B3E001
 
 	- _244
 
-	- uni1B3E001
+	- nonmarkingreturn
 
-	- uni1B1A.2.nya
+	- uni1B3A.5
 
-	- cereg5
+	- cereg3
 
 	- uni1B7D
 
-	- cereg3 
+	- cereg2 
 
-	- And nonmarkingreturn
+	- And uni1B7E
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
