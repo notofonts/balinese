@@ -1,5 +1,5 @@
 {
-.appVersion = "3072";
+.appVersion = "3109";
 DisplayStrings = (
 "/uni25CC"
 );
@@ -424,7 +424,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -6780,7 +6780,7 @@ subCategory = Spacing;
 },
 {
 glyphname = uni1B3F;
-lastChange = "2017-12-01 22:29:26 +0000";
+lastChange = "2022-07-15 10:44:14 +0000";
 layers = (
 {
 layerId = "3BC433F7-38BC-4C75-8B4E-78FBECB68114";
@@ -6864,6 +6864,7 @@ width = 483;
 );
 note = uni1B3F;
 unicode = 1B3F;
+category = Letter;
 },
 {
 glyphname = uni1B40;
@@ -11297,7 +11298,7 @@ unicode = 200D;
 },
 {
 glyphname = uni25CC;
-lastChange = "2022-07-07 15:53:16 +0000";
+lastChange = "2022-07-15 10:50:59 +0000";
 layers = (
 {
 anchors = (
@@ -11323,11 +11324,11 @@ position = "{611, -6}";
 },
 {
 name = Anchor18;
-position = "{-56, -489}";
+position = "{229, -42}";
 },
 {
 name = Anchor20;
-position = "{-56, -489}";
+position = "{515, -7}";
 },
 {
 name = Anchor22;
@@ -11335,7 +11336,7 @@ position = "{0, 800}";
 },
 {
 name = Anchor24;
-position = "{-71, -127}";
+position = "{317, -33}";
 },
 {
 name = Anchor6;
