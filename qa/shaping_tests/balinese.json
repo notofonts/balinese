@@ -1,6 +1,18 @@
 {
     "tests": [
         {
+            "input": "ᬓ᬴᭄ᬔᬃᬓ᬴ᬃ",
+            "expectation": "uni1B13=0+1111|uni1B341B03=0@-262,0+0|uni1B14.sub=0@50,0+0|uni1B13=5+1111|uni1B341B03=5@-262,0+0",
+            "note": "Issue #12",
+            "only": "NotoSerifBalinese-Regular.ttf"
+        },
+        {
+            "input": "ᬓ᬴᭄ᬔᬃᬓ᬴ᬃ",
+            "expectation": "uni1B13=0+1205|uni1B34_uni1B03=0@-465,-19+0|uni1B14.conj=0+0|uni1B13=5+1205|uni1B34_uni1B03=5@-465,-19+0",
+            "note": "Issue #12",
+            "only": "NotoSansBalinese-Regular.ttf"
+        },
+        {
             "expectation": "uni1B1B.alt=0+1208|uni1B13.sub=0@-144,-196+0|uni1B1B.alt=3+1208|uni1B34=3@-457,0+0|uni1B13.sub=3@-144,-196+0",
             "input": "ᬛ᭄ᬓᬛ᬴᭄ᬓ",
             "note": "Issue #7",
@@ -219,12 +231,6 @@
         {
             "expectation": "uni1B1D=0+1050|uni1B39=0@-1,0+0|uni1B07=2+933|uni1B03=2@-216,0+0",
             "input": "ᬝᬹᬇᬃ",
-            "note": "Added by SIESTA",
-            "only": "NotoSerifBalinese-Regular.ttf"
-        },
-        {
-            "expectation": "uni1B2B1B35=0+1086|uni1B34=0@-418,0+0|uni1B3C.blw=0+0|uni1B42=0@-208,0+0|uni1B29=3+1180|uni1B03=3@-387,0+0|uni1B79=5+624|uni1B73=5@-74,-10+0|uni1B1F=7+934|uni1B01=7@-186,0+0",
-            "input": "ᬫ᬴ᬽᬩᬃ᭹᭳ᬟᬁ",
             "note": "Added by SIESTA",
             "only": "NotoSerifBalinese-Regular.ttf"
         },
