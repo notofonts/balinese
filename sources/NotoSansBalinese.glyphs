@@ -3498,6 +3498,8 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B2F.conj.ya uni1B39 by uni1B2F.conj.ya.uu;
   sub @dist12 uni1B2D.conj.1 uni1B2F.conj.2 by uni1B13.ra_uni1B2D.conj.wa;
   sub uni1B2F.conj.2 @marksabove [uni1B38 uni1B39]' by [uni1B38.5 uni1B39.5];
+
+  sub uni1B2B.conj uni1B38.2 by _244; # ma-suku
 ";
 name = rlig;
 },
