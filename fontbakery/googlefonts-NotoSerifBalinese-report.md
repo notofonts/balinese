@@ -2,7 +2,12 @@
 
 Fontbakery version: 0.8.11a8
 
-<details><summary><b>[9] NotoSerifBalinese-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[12] NotoSerifBalinese-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+
+
+* 🔥 **FAIL** Version number 2.003997802734375 is equal to version on Google Fonts.
+* 🔥 **FAIL** Version number 2.003997802734375 is equal to version on Google Fonts GitHub repo.
+</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -109,6 +114,38 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13
 
 
 </div> [code: shaping-regression]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
+
+
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+
+
+* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
+
+	- uni1B02 + uni1B36
+
+	- uni1B36 + uni1B42
+
+	- uni1B42 + uni1B42
+
+	- uni1B42 + uni1B36
+
+	- uni1B36 + uni1B36
+
+	- uni1B36 + uni1B37
+
+	- uni1B37 + uni1B42
+
+	- uni1B03 + uni1B34
+
+	- uni1B34 + uni1B36
+
+	- uni1B34 + uni1B03 
+
+	- And 27 more.
+
+Use -F or --full-lists to disable shortening of long lists. [code: lacks-kern-info]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -183,8 +220,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 6 | 113 | 7 | 104 | 0 |
-| 0% | 1% | 3% | 48% | 3% | 45% | 0% |
+| 0 | 4 | 8 | 111 | 7 | 103 | 0 |
+| 0% | 2% | 3% | 48% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

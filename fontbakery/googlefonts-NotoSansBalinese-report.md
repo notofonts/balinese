@@ -74,14 +74,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni1B0B.conj (unencoded), uni1B0C.conj (unencoded), uni1B13.ra_uni1B2D.conj.wa (unencoded), uni1B1B.conj (unencoded), uni1B1B.conj.td (unencoded), uni1B21.conj.1 (unencoded), uni1B23.conj.ya (unencoded), uni1B23.conj.ya.td (unencoded), uni1B23.conj.ya.u (unencoded), uni1B23.conj.ya.uu (unencoded) and 47 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 uni1B3B (U+1B3B), uni1B3D (U+1B3D), uni1B40 (U+1B40), uni1B41 (U+1B41), uni1B43 (U+1B43) and uni1B6A (U+1B6A) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+1B3B, U+1B3D, U+1B40, U+1B41 and U+1B43 [code: non-mark-chars]
+	 U+1B3B, U+1B3D, U+1B40, U+1B41, U+1B43 and U+1B6A [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -223,14 +221,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni1B0B.conj (unencoded), uni1B0C.conj (unencoded), uni1B13.ra_uni1B2D.conj.wa (unencoded), uni1B1B.conj (unencoded), uni1B1B.conj.td (unencoded), uni1B23.conj.ya (unencoded), uni1B23.conj.ya.td (unencoded), uni1B23.conj.ya.u (unencoded), uni1B23.conj.ya.uu (unencoded), uni1B26.conj.ya (unencoded) and 47 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 uni1B3B (U+1B3B), uni1B3D (U+1B3D), uni1B40 (U+1B40), uni1B41 (U+1B41), uni1B43 (U+1B43) and uni1B6A (U+1B6A) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+1B3B, U+1B3D, U+1B40, U+1B41 and U+1B43 [code: non-mark-chars]
+	 U+1B3B, U+1B3D, U+1B40, U+1B41, U+1B43 and U+1B6A [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -361,14 +357,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni1B0B.conj (unencoded), uni1B0C.conj (unencoded), uni1B13.ra_uni1B2D.conj.wa (unencoded), uni1B1B.conj (unencoded), uni1B1B.conj.td (unencoded), uni1B23.conj.ya (unencoded), uni1B23.conj.ya.td (unencoded), uni1B23.conj.ya.u (unencoded), uni1B23.conj.ya.uu (unencoded), uni1B26.conj.ya (unencoded) and 46 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 uni1B3B (U+1B3B), uni1B3D (U+1B3D), uni1B40 (U+1B40), uni1B41 (U+1B41), uni1B43 (U+1B43) and uni1B6A (U+1B6A) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+1B3B, U+1B3D, U+1B40, U+1B41 and U+1B43 [code: non-mark-chars]
+	 U+1B3B, U+1B3D, U+1B40, U+1B41, U+1B43 and U+1B6A [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -464,14 +458,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni1B0B.conj (unencoded), uni1B0C.conj (unencoded), uni1B13.ra_uni1B2D.conj.wa (unencoded), uni1B1B.conj (unencoded), uni1B1B.conj.td (unencoded), uni1B21.conj.1 (unencoded), uni1B23.conj.ya (unencoded), uni1B23.conj.ya.td (unencoded), uni1B23.conj.ya.u (unencoded), uni1B23.conj.ya.uu (unencoded) and 48 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 uni1B3B (U+1B3B), uni1B3D (U+1B3D), uni1B40 (U+1B40), uni1B41 (U+1B41), uni1B43 (U+1B43) and uni1B6A (U+1B6A) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+1B3B, U+1B3D, U+1B40, U+1B41 and U+1B43 [code: non-mark-chars]
+	 U+1B3B, U+1B3D, U+1B40, U+1B41, U+1B43 and U+1B6A [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -591,21 +583,19 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni1B0B.conj (unencoded), uni1B0C.conj (unencoded), uni1B13.ra_uni1B2D.conj.wa (unencoded), uni1B1B.conj (unencoded), uni1B1B.conj.td (unencoded), uni1B23.conj.ya (unencoded), uni1B23.conj.ya.td (unencoded), uni1B23.conj.ya.u (unencoded), uni1B23.conj.ya.uu (unencoded), uni1B26.conj.ya (unencoded) and 46 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 uni1B3B (U+1B3B), uni1B3D (U+1B3D), uni1B40 (U+1B40), uni1B41 (U+1B41), uni1B43 (U+1B43) and uni1B6A (U+1B6A) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+1B3B, U+1B3D, U+1B40, U+1B41 and U+1B43 [code: non-mark-chars]
+	 U+1B3B, U+1B3D, U+1B40, U+1B41, U+1B43 and U+1B6A [code: non-mark-chars]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 3 | 11 | 42 | 552 | 32 | 465 | 0 |
+| 3 | 11 | 42 | 553 | 32 | 464 | 0 |
 | 0% | 1% | 4% | 50% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
