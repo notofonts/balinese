@@ -729,11 +729,6 @@ languagesystem bali KAW ; # Balinese
 # Lookup definitions
 #
 
-lookup rphf_baliKAW_2 {
-# GSUB lookup 3, type 14 (Ligature)
-  sub uni1B2D uni1B44 by uni1B03;
-} rphf_baliKAW_2;
-
 lookup liga_3 {
 # GSUB lookup 9, type 11 (Single)
   sub [uni1B2E.conj.1 uni1B2F.conj.1] by [uni1B2E.conj.3 uni1B2F.conj.2];
@@ -3312,7 +3307,8 @@ lookup dist_337 {
   
 #
 # Feature definitions
-#";
+#
+";
 name = Languagesystems;
 }
 );
@@ -3480,9 +3476,7 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
 name = rlig;
 },
 {
-code = "  script bali; # Balinese
-    language KAW ;
-    sub uni1B2D' lookup rphf_baliKAW_2 uni1B44' @dist_rphf;";
+code = "";
 name = rphf;
 },
 {
