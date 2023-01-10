@@ -12755,8 +12755,8 @@ width = 407;
 }
 );
 unicode = 1B6A;
-category = Mark;
-subCategory = "Spacing Combining";
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = uni1B6B;
