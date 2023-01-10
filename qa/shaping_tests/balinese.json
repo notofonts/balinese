@@ -1,6 +1,12 @@
 {
     "tests": [
         {
+            "input": "᭪᭩",
+            "expectation": "uni1B6A=0+379|uni1B69=1+1334",
+            "note": "Issue #13",
+            "only": "NotoSansBalinese-Regular.ttf"
+        },
+        {
             "input": "ᬓ᭄ᬖ᬴ᬸᬓ᭄ᬖᬸ",
             "expectation": "uni1B13=0+1111|uni1B16.sub.u=0@1,0+0|uni1B34=0@-325,0+0|uni1B13=5+1111|uni1B16.sub.u=5@1,0+0",
             "note": "Issue #9",
