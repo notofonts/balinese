@@ -1,6 +1,12 @@
 {
     "tests": [
         {
+            "expectation": "uni1B1B.alt=0+1208|uni1B13.sub=0@-144,-196+0|uni1B1B.alt=3+1208|uni1B34=3@-457,0+0|uni1B13.sub=3@-144,-196+0",
+            "input": "ᬛ᭄ᬓᬛ᬴᭄ᬓ",
+            "note": "Issue #7",
+            "only": "NotoSerifBalinese-Regular.ttf"
+        },
+        {
             "expectation": "uni1B13=0+1111|uni1B14=1+1131|uni1B15=2+1092|uni1B16=3+1168|uni1B17=4+933|uni1B18=5+794|uni1B19=6+1052|uni1B1A=7+879|uni1B1B=8+1208|uni1B1C=9+1509|uni1B1D=10+1050|uni1B35=10+447|uni1B33=12+1223|uni1B1D=13+1050|uni1B1E=14+1011|uni1B1F=15+934|uni1B20=16+810|uni1B21=17+1221|uni1B22=18+1204|uni1B23=19+793|uni1B24=20+1072|uni1B25=21+920",
             "input": "ᬓᬔᬕᬖᬗᬘᬙᬚᬛᬜᬝᬵᬳᬝᬞᬟᬠᬡᬢᬣᬤᬥ",
             "note": "fontdiff-ban-sample.html",
@@ -87,12 +93,6 @@
         {
             "expectation": "uni1B27=0+807|uni1B37=0@-92,0+0|uni1B30=2+1092|uni1B42=2@-98,0+0",
             "input": "ᬧᬷᬰᭂ",
-            "note": "Added by SIESTA",
-            "only": "NotoSerifBalinese-Regular.ttf"
-        },
-        {
-            "expectation": "uni1B33=0+1223|uni1B03=0@-393,0+0|uni1B2F=2+793|uni1B34=2@-127,0+0|uni1B361B02=2@-112,0+0|uni1B2E=6+1223",
-            "input": "ᬳᬃᬯ᬴ᬶᬂᬮ",
             "note": "Added by SIESTA",
             "only": "NotoSerifBalinese-Regular.ttf"
         },
@@ -277,12 +277,6 @@
             "only": "NotoSerifBalinese-Regular.ttf"
         },
         {
-            "expectation": "uni1B1D=0+1050|uni1B38=0@-1,0+0|uni1B33=2+1223|uni1B01=2@-320,0+0|uni1B48=4+807|uni1B34=4@-115,0+0|uni1B371B03=4@-100,0+0|uni1B17=8+933",
-            "input": "ᬝᬸᬳᬁᭈ᬴ᬷᬃᬗ",
-            "note": "Added by SIESTA",
-            "only": "NotoSerifBalinese-Regular.ttf"
-        },
-        {
             "expectation": "uni1B21=0+1221|uni1B34=0@-330,0+0|uni1B241B35=2+1368|uni1B7A=4+590|uni1B71=4@-9,-10+0",
             "input": "ᬡ᬴ᬤᬵ᭺᭱",
             "note": "Added by SIESTA",
@@ -399,12 +393,6 @@
         {
             "expectation": "uni1B30=0+1092|uni1B1F=1+934|uni1B02=1@-308,0+0|uni1B2C=3+959|uni1B4A=4+808",
             "input": "ᬰᬟᬂᬬᭊ",
-            "note": "Added by SIESTA",
-            "only": "NotoSerifBalinese-Regular.ttf"
-        },
-        {
-            "expectation": "uni1B2C=0+959|uni1B3A=0@-2,0+0|uni1B2B=2+1196|uni1B16.sub=2@-64,0+0|uni1B361B021B42=2@-478,0+0|uni1B271B35=8+1040",
-            "input": "ᬬᬺᬫ᭄ᬖᭂᬶᬂᬧᬵ",
             "note": "Added by SIESTA",
             "only": "NotoSerifBalinese-Regular.ttf"
         },
