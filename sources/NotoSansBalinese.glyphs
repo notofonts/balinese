@@ -20040,8 +20040,8 @@ nodes = (
 width = 814;
 }
 );
-category = Mark;
-subCategory = "Spacing Combining";
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = uni1B28.conj;
