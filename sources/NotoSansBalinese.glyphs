@@ -1,5 +1,5 @@
 {
-.appVersion = "3149";
+.appVersion = "3200";
 classes = (
 {
 code = "uni1B38.3 uni1B38.4 uni1B39.3 uni1B39.4 uni1B0E.conj uni1B26.conj.u uni1B26.conj.uu uni1B2C.conj.u.1 uni1B2C.conj.uu.1 uni1B2C.conj.u.2 uni1B2C.conj.uu.2 uni1B23.conj.ya.u uni1B26.conj.ya.u uni1B2D.conj.ya.u uni1B2D.conj.3.ya.u uni1B2F.conj.ya.u uni1B49.conj.ya.u uni1B23.conj.ya.uu uni1B26.conj.ya.uu uni1B2D.conj.ya.uu uni1B2D.conj.3.ya.uu uni1B2F.conj.ya.uu uni1B49.conj.ya.uu uni1B38.5 uni1B39.5 ";
@@ -19479,7 +19479,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B23.conj.ra;
@@ -19942,7 +19942,7 @@ width = 523;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B27.conj;
@@ -21183,7 +21183,7 @@ width = 479;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.3.ya;
@@ -22156,7 +22156,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2F.conj.ra;
@@ -22764,7 +22764,7 @@ width = 519;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B49.conj.ra;
@@ -24162,7 +24162,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1597;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24259,7 +24259,7 @@ nodes = (
 width = 1418;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24452,7 +24452,7 @@ nodes = (
 width = 2014;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24563,7 +24563,7 @@ nodes = (
 width = 1532;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24652,7 +24652,7 @@ nodes = (
 width = 1391;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24905,7 +24905,7 @@ nodes = (
 width = 1934;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -24980,7 +24980,7 @@ nodes = (
 width = 1221;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25171,7 +25171,7 @@ nodes = (
 width = 1221;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25276,7 +25276,7 @@ nodes = (
 width = 1268;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25417,7 +25417,7 @@ nodes = (
 width = 1388;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25456,7 +25456,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1403;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25605,7 +25605,7 @@ nodes = (
 width = 1405;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25644,7 +25644,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1430;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25811,7 +25811,7 @@ nodes = (
 width = 1528;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25850,7 +25850,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1559;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -25887,7 +25887,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1157;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26056,7 +26056,7 @@ nodes = (
 width = 1433;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26093,7 +26093,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1200;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26132,7 +26132,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1402;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26273,7 +26273,7 @@ nodes = (
 width = 1342;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26398,7 +26398,7 @@ nodes = (
 width = 1566;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26537,7 +26537,7 @@ nodes = (
 width = 1449;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26576,7 +26576,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1391;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26623,7 +26623,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1157;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26712,7 +26712,7 @@ nodes = (
 width = 1214;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26853,7 +26853,7 @@ nodes = (
 width = 1318;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -26902,7 +26902,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1570;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27031,7 +27031,7 @@ nodes = (
 width = 2074;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27078,7 +27078,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1408;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27127,7 +27127,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1142;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27276,7 +27276,7 @@ nodes = (
 width = 1376;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27313,7 +27313,7 @@ layerId = "61CE545B-E6AD-45B5-B051-8D1B01C68A7F";
 width = 1214;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27478,7 +27478,7 @@ nodes = (
 width = 2103;
 }
 );
-category = Number;
+category = Letter;
 subCategory = Spacing;
 },
 {
@@ -27560,7 +27560,7 @@ width = 674;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B26.conj.ya.td;
@@ -27629,7 +27629,7 @@ width = 674;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2C.conj.td.1;
@@ -27690,7 +27690,7 @@ width = 647;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2C.conj.td.2;
@@ -27751,7 +27751,7 @@ width = 674;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.ya.td;
@@ -27812,7 +27812,7 @@ width = 647;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.3.ya.td;
@@ -27873,7 +27873,7 @@ width = 647;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2F.conj.ya.td;
@@ -27908,7 +27908,7 @@ width = 647;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B1B.conj.td;
@@ -27981,7 +27981,7 @@ width = 869;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B27.conj.td;
@@ -28056,7 +28056,7 @@ width = 1002;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B31.conj.td;
@@ -28095,7 +28095,7 @@ width = 994;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B48.conj.td;
@@ -28134,7 +28134,7 @@ width = 999;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B49.conj.ya.td;
@@ -28171,7 +28171,7 @@ width = 647;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2C.conj.u.2;
@@ -28392,7 +28392,7 @@ width = 468;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B26.conj.ya.u;
@@ -28467,7 +28467,7 @@ width = 468;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.ya.u;
@@ -28512,7 +28512,7 @@ width = 479;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.3.ya.u;
@@ -28656,7 +28656,7 @@ width = 479;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B49.conj.ya.u;
@@ -28693,7 +28693,7 @@ width = 479;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B23.conj.ya.uu;
@@ -28780,7 +28780,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B26.conj.ya.uu;
@@ -28855,7 +28855,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.ya.uu;
@@ -28900,7 +28900,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B2D.conj.3.ya.uu;
@@ -29044,7 +29044,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B49.conj.ya.uu;
@@ -29081,7 +29081,7 @@ width = 478;
 }
 );
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Spacing;
 },
 {
 glyphname = uni1B32.conj;
