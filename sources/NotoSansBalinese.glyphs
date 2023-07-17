@@ -1,5 +1,5 @@
 {
-.appVersion = "3200";
+.appVersion = "3205";
 classes = (
 {
 code = "uni1B38.3 uni1B38.4 uni1B39.3 uni1B39.4 uni1B0E.conj uni1B26.conj.u uni1B26.conj.uu uni1B2C.conj.u.1 uni1B2C.conj.uu.1 uni1B2C.conj.u.2 uni1B2C.conj.uu.2 uni1B23.conj.ya.u uni1B26.conj.ya.u uni1B2D.conj.ya.u uni1B2D.conj.3.ya.u uni1B2F.conj.ya.u uni1B49.conj.ya.u uni1B23.conj.ya.uu uni1B26.conj.ya.uu uni1B2D.conj.ya.uu uni1B2D.conj.3.ya.uu uni1B2F.conj.ya.uu uni1B49.conj.ya.uu uni1B38.5 uni1B39.5 ";
@@ -3388,6 +3388,7 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub @liga4 [uni1B38 uni1B39]' lookup liga_9;
   sub @liga4 @marksabove [uni1B38 uni1B39]' lookup liga_9;
   sub [uni1B1B uni1B1B.conj uni1B23.conj uni1B2D.conj.1 uni1B2F.conj.1 uni1B49.conj] [uni1B38 uni1B39]' lookup liga_10;
+
   sub uni1B1A.conj uni1B38.2 by uni1B1A.conj.u;
   sub uni1B24.conj uni1B38.2 by uni1B24.conj.u;
   sub uni1B26.conj uni1B38 by uni1B26.conj.u;
@@ -3416,6 +3417,8 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B49.conj uni1B2C.conj.uu.1 by uni1B49.conj.ya.uu;
   sub @dist_liga @liga' lookup liga_15;
   sub @liga5 uni1B3A' lookup liga_16;
+
+lookup CakraLigature {
   sub uni1B13 uni1B2D.conj.1 by uni1B13.ra;
   sub uni1B14 uni1B2D.conj.1 by uni1B14.ra;
   sub uni1B15 uni1B2D.conj.1 by uni1B15.ra;
@@ -3455,20 +3458,41 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B49 uni1B2D.conj.1 by uni1B49.ra;
   sub uni1B4A uni1B2D.conj.1 by uni1B4A.ra;
   sub uni1B4B uni1B2D.conj.1 by uni1B4B.ra;
+} CakraLigature;
+
+lookup SecondLevelRa {
   sub uni1B27.conj uni1B2D.conj.1 by uni1B27.conj.ra;
   sub uni1B28.conj uni1B2D.conj.1 by uni1B28.conj.ra;
   sub uni1B31.conj uni1B2D.conj.1 by uni1B31.conj.ra;
   sub uni1B48.conj uni1B2D.conj.1 by uni1B48.conj.ra;
+} SecondLevelRa;
+
   sub uni1B1B.2 uni1B2D.conj.1 by uni1B1B.ra;
+
+lookup ConjunctVowel {
+  sub uni1B23.conj.ya uni1B38 by uni1B23.conj.ya.u;
+  sub uni1B23.conj.ya uni1B39 by uni1B23.conj.ya.uu;
+
+  sub uni1B26.conj.ya uni1B38 by uni1B26.conj.ya.u;
+  sub uni1B26.conj.ya uni1B39 by uni1B26.conj.ya.uu;
+
   sub uni1B2D.conj.ya uni1B38 by uni1B2D.conj.ya.u;
+  sub uni1B2D.conj.ya uni1B39 by uni1B2D.conj.ya.uu;
+
+  sub uni1B49.conj.ya uni1B38 by uni1B49.conj.ya.u;
+  sub uni1B49.conj.ya uni1B39 by uni1B49.conj.ya.uu;
+
   sub uni1B2F.conj.ya uni1B38 by uni1B2F.conj.ya.u;
+  sub uni1B2F.conj.ya uni1B39 by uni1B2F.conj.ya.uu;
+
   sub uni1B2D.conj.3.ya uni1B38 by uni1B2D.conj.3.ya.u;
+  sub uni1B2D.conj.3.ya uni1B39 by uni1B2D.conj.3.ya.uu;
   sub uni1B2D.conj.3 uni1B2F.conj.2 by uni1B2D.conj.3.wa;
   sub uni1B2D.conj.wa uni1B2F.conj.1 by uni1B2D.conj.wa;
-  sub uni1B2D.conj.3.ya uni1B39 by uni1B2D.conj.3.ya.uu;
-  sub uni1B2D.conj.ya uni1B39 by uni1B2D.conj.ya.uu;
-  sub uni1B2F.conj.ya uni1B39 by uni1B2F.conj.ya.uu;
+
   sub @dist12 uni1B2D.conj.1 uni1B2F.conj.2 by uni1B13.ra_uni1B2D.conj.wa;
+} ConjunctVowel;
+
   sub uni1B2F.conj.2 @marksabove [uni1B38 uni1B39]' by [uni1B38.5 uni1B39.5];
 
   sub uni1B2B.conj uni1B38.2 by _244; # ma-suku
