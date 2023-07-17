@@ -7,7 +7,8 @@ DisplayStrings = (
 "/uni1B13/_part.cakra",
 "/uni1B15",
 "/uni1B26/uni1B26.sub/_part.cakra/uni1B2D.sub2",
-"/uni1B3A/uni1B2E.sub"
+"/uni1B3A/uni1B2E.sub",
+"/uni25CC"
 );
 classes = (
 {
@@ -11192,7 +11193,7 @@ layers = (
 anchors = (
 {
 name = Anchor11;
-position = "{564, -110}";
+position = "{630, 0}";
 },
 {
 name = Anchor13;
@@ -11212,11 +11213,11 @@ position = "{611, -6}";
 },
 {
 name = Anchor18;
-position = "{229, -42}";
+position = "{631, 37}";
 },
 {
 name = Anchor20;
-position = "{515, -7}";
+position = "{631, 46}";
 },
 {
 name = Anchor22;
