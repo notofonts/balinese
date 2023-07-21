@@ -290,7 +290,7 @@ code = "\012lookup LargeSpace {\012    pos uni1B13 259;\012    pos uni1B14 259;\
 name = Kerns;
 },
 {
-code = "languagesystem bali dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem bali dflt;\012";
 name = Languagesystems;
 }
 );
