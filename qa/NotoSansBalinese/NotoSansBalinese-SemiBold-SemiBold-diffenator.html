@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attr-before{
+                color: red;
+                cursor: text;
+            }
+            .attr-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansBalinese[wght].ttf);
+    font-family: "old font";
+    font-weight: 400 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansBalinese-SemiBold.ttf);
+    font-family: "new font";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-SemiBold{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 600.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 600.0;
+}
+	  
+
+	  
+	    .new-SemiBold{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 600;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 600;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+      <div data-path="root" data-open="0" id="difftable"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-SemiBold" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭞<br>
+        <span class="tooltiptext">
+            name: BALINESE CARIK SIKI<br>
+            unicode: U+1B5E<br>
+            changed pixels: 3.37%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭩<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL DAING<br>
+            unicode: U+1B69<br>
+            changed pixels: 1.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭮<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL COMBINING KEMPLI<br>
+            unicode: U+1B6E<br>
+            changed pixels: 1.61%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬶ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN ULU<br>
+            unicode: U+1B36<br>
+            changed pixels: 1.60%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬀ<br>
+        <span class="tooltiptext">
+            name: BALINESE SIGN ULU RICEM<br>
+            unicode: U+1B00<br>
+            changed pixels: 1.35%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬷ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN ULU SARI<br>
+            unicode: U+1B37<br>
+            changed pixels: 1.32%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬹ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN SUKU ILUT<br>
+            unicode: U+1B39<br>
+            changed pixels: 1.23%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬼ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN LA LENGA<br>
+            unicode: U+1B3C<br>
+            changed pixels: 1.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭸<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL LEFT-HAND OPEN PANG<br>
+            unicode: U+1B78<br>
+            changed pixels: 1.16%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭂ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN PEPET<br>
+            unicode: U+1B42<br>
+            changed pixels: 1.14%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭫<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL COMBINING TEGEH<br>
+            unicode: U+1B6B<br>
+            changed pixels: 1.13%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬁ<br>
+        <span class="tooltiptext">
+            name: BALINESE SIGN ULU CANDRA<br>
+            unicode: U+1B01<br>
+            changed pixels: 1.12%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬸ<br>
+        <span class="tooltiptext">
+            name: BALINESE VOWEL SIGN SUKU<br>
+            unicode: U+1B38<br>
+            changed pixels: 1.10%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬴<br>
+        <span class="tooltiptext">
+            name: BALINESE SIGN REREKAN<br>
+            unicode: U+1B34<br>
+            changed pixels: 1.08%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭕<br>
+        <span class="tooltiptext">
+            name: BALINESE DIGIT FIVE<br>
+            unicode: U+1B55<br>
+            changed pixels: 1.01%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭬<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL COMBINING ENDEP<br>
+            unicode: U+1B6C<br>
+            changed pixels: 1.00%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭱<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL COMBINING KEMPLI WITH JEGOGAN<br>
+            unicode: U+1B71<br>
+            changed pixels: 0.97%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭳<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL COMBINING GONG<br>
+            unicode: U+1B73<br>
+            changed pixels: 0.97%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬃ<br>
+        <span class="tooltiptext">
+            name: BALINESE SIGN SURANG<br>
+            unicode: U+1B03<br>
+            changed pixels: 0.95%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭦<br>
+        <span class="tooltiptext">
+            name: BALINESE MUSICAL SYMBOL DING<br>
+            unicode: U+1B66<br>
+            changed pixels: 0.95%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬣ<br>
+        <span class="tooltiptext">
+            name: BALINESE LETTER TA TAWA<br>
+            unicode: U+1B23<br>
+            changed pixels: 0.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭓<br>
+        <span class="tooltiptext">
+            name: BALINESE DIGIT THREE<br>
+            unicode: U+1B53<br>
+            changed pixels: 0.93%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᭌ<br>
+        <span class="tooltiptext">
+            name: BALINESE LETTER ARCHAIC JNYA<br>
+            unicode: U+1B4C<br>
+            changed pixels: 0.92%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬰ<br>
+        <span class="tooltiptext">
+            name: BALINESE LETTER SA SAGA<br>
+            unicode: U+1B30<br>
+            changed pixels: 0.91%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᬏ<br>
+        <span class="tooltiptext">
+            name: BALINESE LETTER EKARA<br>
+            unicode: U+1B0F<br>
+            changed pixels: 0.90%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-SemiBold" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+<script>var fontdiff = {"glyf": {"axisTags": {"0": ["wght", null]}, "glyphs": {"error": ["There are 335 changes, check manually!", ""]}}, "maxp": {"maxPoints": [255, 227], "maxCompositePoints": [297, 289]}, "HVAR": {"tableTag": ["HVAR", null], "table": {"Version": [65536, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [1, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [2, null], "VarData": {"0": {"ItemCount": [74, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-43, null]}, "1": {"0": [-27, null]}, "2": {"0": [-23, null]}, "3": {"0": [-9, null]}, "4": {"0": [0, null]}, "5": {"0": [1, null]}, "6": {"0": [2, null]}, "7": {"0": [6, null]}, "8": {"0": [9, null]}, "9": {"0": [17, null]}, "10": {"0": [18, null]}, "11": {"0": [19, null]}, "12": {"0": [21, null]}, "13": {"0": [23, null]}, "14": {"0": [25, null]}, "15": {"0": [28, null]}, "16": {"0": [30, null]}, "17": {"0": [31, null]}, "18": {"0": [33, null]}, "19": {"0": [35, null]}, "20": {"0": [37, null]}, "21": {"0": [38, null]}, "22": {"0": [39, null]}, "23": {"0": [42, null]}, "24": {"0": [43, null]}, "25": {"0": [45, null]}, "26": {"0": [46, null]}, "27": {"0": [47, null]}, "28": {"0": [48, null]}, "29": {"0": [51, null]}, "30": {"0": [53, null]}, "31": {"0": [54, null]}, "32": {"0": [55, null]}, "33": {"0": [63, null]}, "34": {"0": [64, null]}, "35": {"0": [66, null]}, "36": {"0": [67, null]}, "37": {"0": [71, null]}, "38": {"0": [73, null]}, "39": {"0": [74, null]}, "40": {"0": [75, null]}, "41": {"0": [76, null]}, "42": {"0": [79, null]}, "43": {"0": [80, null]}, "44": {"0": [81, null]}, "45": {"0": [82, null]}, "46": {"0": [83, null]}, "47": {"0": [87, null]}, "48": {"0": [89, null]}, "49": {"0": [91, null]}, "50": {"0": [92, null]}, "51": {"0": [93, null]}, "52": {"0": [94, null]}, "53": {"0": [95, null]}, "54": {"0": [96, null]}, "55": {"0": [97, null]}, "56": {"0": [98, null]}, "57": {"0": [99, null]}, "58": {"0": [100, null]}, "59": {"0": [101, null]}, "60": {"0": [102, null]}, "61": {"0": [103, null]}, "62": {"0": [105, null]}, "63": {"0": [106, null]}, "64": {"0": [108, null]}, "65": {"0": [110, null]}, "66": {"0": [111, null]}, "67": {"0": [112, null]}, "68": {"0": [113, null]}, "69": {"0": [117, null]}, "70": {"0": [118, null]}, "71": {"0": [120, null]}, "72": {"0": [121, null]}, "73": {"0": [122, null]}}}, "1": {"ItemCount": [40, null], "NumShorts": [1, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [128, null]}, "1": {"0": [130, null]}, "2": {"0": [131, null]}, "3": {"0": [133, null]}, "4": {"0": [134, null]}, "5": {"0": [135, null]}, "6": {"0": [138, null]}, "7": {"0": [140, null]}, "8": {"0": [143, null]}, "9": {"0": [147, null]}, "10": {"0": [151, null]}, "11": {"0": [154, null]}, "12": {"0": [155, null]}, "13": {"0": [157, null]}, "14": {"0": [158, null]}, "15": {"0": [160, null]}, "16": {"0": [161, null]}, "17": {"0": [163, null]}, "18": {"0": [165, null]}, "19": {"0": [166, null]}, "20": {"0": [167, null]}, "21": {"0": [172, null]}, "22": {"0": [174, null]}, "23": {"0": [178, null]}, "24": {"0": [180, null]}, "25": {"0": [182, null]}, "26": {"0": [198, null]}, "27": {"0": [199, null]}, "28": {"0": [200, null]}, "29": {"0": [216, null]}, "30": {"0": [218, null]}, "31": {"0": [220, null]}, "32": {"0": [221, null]}, "33": {"0": [226, null]}, "34": {"0": [232, null]}, "35": {"0": [248, null]}, "36": {"0": [261, null]}, "37": {"0": [488, null]}, "38": {"0": [514, null]}, "39": {"0": [669, null]}}}}}, "AdvWidthMap": {"mapping": {"error": ["There are 361 changes, check manually!", ""]}}}}, "fvar": {"axes": {"wght": {"minValue": [400.0, null], "maxValue": [700.0, null], "defaultValue": [400.0, null], "axisName": ["Weight", null]}}, "instances": {"Regular": {"coordinates": {"wght": [400.0, null]}, "flags": [0, null]}, "Medium": {"coordinates": {"wght": [500.0, null]}, "flags": [0, null]}, "SemiBold": {"coordinates": {"wght": [600.0, null]}, "flags": [0, null]}, "Bold": {"coordinates": {"wght": [700.0, null]}, "flags": [0, null]}}}, "name": {"260/1/0/0": ["Bold", null], "260/3/1/1033": ["Bold", null], "258/3/1/1033": ["Medium", null], "25/3/1/1033": ["NotoSansBalinese", null], "256/1/0/0": ["Weight", null], "259/3/1/1033": ["SemiBold", null], "258/1/0/0": ["Medium", null], "17/3/1/1033": [null, "SemiBold"], "256/3/1/1033": ["Weight", null], "14/3/1/1033": ["https://openfontlicense.org", "https://scripts.sil.org/OFL"], "257/3/1/1033": ["Regular", null], "13/3/1/1033": ["This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org", "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"], "3/3/1/1033": ["2.005;GOOG;NotoSansBalinese-Regular", "2.005;GOOG;NotoSansBalinese-SemiBold"], "257/1/0/0": ["Regular", null], "16/3/1/1033": [null, "Noto Sans Balinese"], "1/3/1/1033": ["Noto Sans Balinese", "Noto Sans Balinese SemiBold"], "6/3/1/1033": ["NotoSansBalinese-Regular", "NotoSansBalinese-SemiBold"], "4/3/1/1033": ["Noto Sans Balinese Regular", "Noto Sans Balinese SemiBold"], "259/1/0/0": ["SemiBold", null]}, "OS/2": {"panose": {"bWeight": [5, 7]}, "usWeightClass": [400, 600], "xAvgCharWidth": [974, 1026]}, "STAT": {"axis values": {"Regular": {"format": [3, null], "AxisIndex": [0, null], "Flags": [2, null], "Value": [400.0, null]}, "Medium": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [500.0, null]}, "SemiBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [600.0, null]}, "Bold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [700.0, null]}}, "design axis records": {"wght": {"order": [0, null], "AxisName": ["Weight", null]}}}, "head": {"modified": [3790688532, 3791102935], "checkSumAdjustment": [4137284973, 379353200], "yMax": [1289, 1342], "xMax": [3209, 3560], "xMin": [-1522, -1579]}, "gvar": {"tableTag": ["gvar", null], "version": [1, null], "reserved": [0, null], "axisCount": [1, null], "sharedTupleCount": [1, null], "offsetToSharedTuples": [744, null], "glyphCount": [361, null], "flags": [0, null], "offsetToGlyphVariationData": [746, null]}, "hhea": {"minLeftSideBearing": [-1522, -1579], "advanceWidthMax": [3273, 3598], "minRightSideBearing": [-586, -653], "xMaxExtent": [3209, 3560]}, "hmtx": {"metrics": {"error": ["There are 340 changes, check manually!", ""]}}, "prep": {"tableTag": ["prep", null]}, "gasp": {"tableTag": ["gasp", null], "version": [1, null], "gaspRange": {"65535": [15, null]}}};</script>
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
