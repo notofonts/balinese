@@ -686,6 +686,10 @@ name = "Use Line Breaks";
 value = 1;
 },
 {
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
 name = licenseURL;
 value = "https://scripts.sil.org/OFL";
 },
@@ -696,10 +700,6 @@ value = "Noto is a trademark of Google LLC.";
 {
 name = vendorID;
 value = GOOG;
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = versionString;
@@ -3337,7 +3337,9 @@ lookup ccmp_Other_2 {
 name = ccmp;
 },
 {
-code = "  sub uni1B13 uni1B35 by uni1B13.td;
+code = "lookup TedungLigature {
+  lookupflag IgnoreMarks;
+  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B15 uni1B35 by uni1B15.td;
   sub uni1B16 uni1B35 by uni1B16.td;
   sub uni1B18 uni1B35 by uni1B18.td;
@@ -3370,6 +3372,10 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B49 uni1B35 by uni1B49.td;
   sub uni1B4A uni1B35 by uni1B4A.td;
   sub uni1B4B uni1B35 by uni1B4B.td;
+} TedungLigature;
+
+lookup TedungLigature2 {
+  lookupflag IgnoreMarks;
   sub uni1B1B.conj uni1B35 by uni1B1B.conj.td;
   sub uni1B23.conj uni1B2C.conj.1 uni1B35 by uni1B23.conj.ya.td;
   sub uni1B26.conj uni1B2C.conj.1 uni1B35 by uni1B26.conj.ya.td;
@@ -3380,6 +3386,8 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B31.conj uni1B35 by uni1B31.conj.td;
   sub uni1B48.conj uni1B35 by uni1B48.conj.td;
   sub uni1B49.conj uni1B2C.conj.1 uni1B35 by uni1B49.conj.ya.td;
+} TedungLigature2;
+
   sub @dist_liga [uni1B2E.conj.1 uni1B2F.conj.1]' lookup liga_3 [uni1B38 uni1B39]' lookup liga_4;
   sub uni1B1A' lookup liga_5 [uni1B38 uni1B23.conj uni1B26.conj uni1B2F.conj.1 uni1B49.conj uni1B32.conj];
   sub uni1B1B' lookup liga_6 @liga3;
