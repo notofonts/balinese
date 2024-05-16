@@ -703,7 +703,7 @@ value = GOOG;
 },
 {
 name = versionString;
-value = "Version 2.005";
+value = "Version 2.006";
 },
 {
 name = Axes;
@@ -36347,5 +36347,5 @@ oV = "90";
 };
 };
 versionMajor = 2;
-versionMinor = 5;
+versionMinor = 6;
 }
