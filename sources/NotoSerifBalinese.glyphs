@@ -1,7 +1,7 @@
 {
-.appVersion = "3205";
+.appVersion = "3243";
 DisplayStrings = (
-"/uni1B1A/uni1B4C"
+"/uni1B43/uni1B4C"
 );
 classes = (
 {
@@ -276,7 +276,7 @@ value = "Noto is a trademark of Google LLC.";
 },
 {
 name = versionString;
-value = "Version 2.005";
+value = "Version 2.006";
 }
 );
 date = "2017-09-24 05:42:43 +0000";
@@ -350,11 +350,11 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1069;
+value = 1249;
 },
 {
 name = winDescent;
-value = 726;
+value = 1005;
 },
 {
 name = hheaAscender;
@@ -435,7 +435,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -20824,5 +20824,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 5;
+versionMinor = 6;
 }
