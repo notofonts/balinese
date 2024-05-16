@@ -104,26 +104,8 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-<details><summary>[12] NotoSansBalinese-SemiBold.ttf</summary>
+<details><summary>[10] NotoSansBalinese-SemiBold.ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1381, but got 1363 instead</p>
- [code: ascent]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
@@ -145,11 +127,11 @@ These won't break the CI job for now, but will become effective after some time 
 <tbody>
 <tr>
 <td align="left">nl_Latn (Dutch)</td>
-<td align="left">Shaper didn't attach acutecomb to uni0237</td>
+<td align="left">Shaper didn't attach acutecomb to J</td>
 </tr>
 <tr>
 <td align="left">^</td>
-<td align="left">Shaper didn't attach acutecomb to J</td>
+<td align="left">Shaper didn't attach acutecomb to uni0237</td>
 </tr>
 </tbody>
 </table>
@@ -177,25 +159,6 @@ These won't break the CI job for now, but will become effective after some time 
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-uni1B3C (U+1B3C)</p>
- [code: mark-chars]
 
 
 
@@ -261,21 +224,7 @@ minus</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- _128
-
-- cereg2
-
-- cereg3
-
-- cereg5
-
-- nonmarkingreturn
-
-- uni1B1A.2.nya
-
-- uni1B3A.5
-
-- uni1B3E001
+<pre><code>- uni1B3A.5
 </code></pre>
  [code: unreachable-glyphs]
 
@@ -381,7 +330,7 @@ minus</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Igbo (Latn, 27,823,640 speakers), Vute (Latn, 21,000 speakers), Sar (Latn, 500,000 speakers), Dan (Latn, 1,099,244 speakers), Dutch (Latn, 31,709,104 speakers), South Central Banda (Latn, 244,000 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), Lugbara (Latn, 2,200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Bete-Bendi (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Gulay (Latn, 250,478 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Zapotec (Latn, 490,000 speakers), Mundani (Latn, 34,000 speakers), Ebira (Latn, 2,200,000 speakers), Nateni (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Ngbaka (Latn, 1,020,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), South Central Banda (Latn, 244,000 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Dutch (Latn, 31,709,104 speakers), Yala (Latn, 200,000 speakers), Gulay (Latn, 250,478 speakers), Ekpeye (Latn, 226,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dii (Latn, 71,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Avokaya (Latn, 100,000 speakers), Vute (Latn, 21,000 speakers), Koonzime (Latn, 40,000 speakers), Bafut (Latn, 158,146 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -405,15 +354,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, canadian-aboriginal, old-permic, syriac, tai-le, math, coptic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, old-permic, canadian-aboriginal, tifinagh, malayalam, coptic, math, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -449,26 +398,8 @@ definitions.</p>
 </div>
 </details>
 
-<details><summary>[14] NotoSansBalinese-Medium.ttf</summary>
+<details><summary>[12] NotoSansBalinese-Medium.ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1381, but got 1363 instead</p>
- [code: ascent]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
@@ -490,11 +421,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">nl_Latn (Dutch)</td>
-<td align="left">Shaper didn't attach acutecomb to uni0237</td>
+<td align="left">Shaper didn't attach acutecomb to J</td>
 </tr>
 <tr>
 <td align="left">^</td>
-<td align="left">Shaper didn't attach acutecomb to J</td>
+<td align="left">Shaper didn't attach acutecomb to uni0237</td>
 </tr>
 </tbody>
 </table>
@@ -522,25 +453,6 @@ definitions.</p>
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-uni1B3C (U+1B3C)</p>
- [code: mark-chars]
 
 
 
@@ -606,21 +518,7 @@ minus</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- _128
-
-- cereg2
-
-- cereg3
-
-- cereg5
-
-- nonmarkingreturn
-
-- uni1B1A.2.nya
-
-- uni1B3A.5
-
-- uni1B3E001
+<pre><code>- uni1B3A.5
 </code></pre>
  [code: unreachable-glyphs]
 
@@ -984,7 +882,7 @@ minus</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Igbo (Latn, 27,823,640 speakers), Vute (Latn, 21,000 speakers), Sar (Latn, 500,000 speakers), Dan (Latn, 1,099,244 speakers), Dutch (Latn, 31,709,104 speakers), South Central Banda (Latn, 244,000 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), Lugbara (Latn, 2,200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Bete-Bendi (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Gulay (Latn, 250,478 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Zapotec (Latn, 490,000 speakers), Mundani (Latn, 34,000 speakers), Ebira (Latn, 2,200,000 speakers), Nateni (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Ngbaka (Latn, 1,020,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), South Central Banda (Latn, 244,000 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Dutch (Latn, 31,709,104 speakers), Yala (Latn, 200,000 speakers), Gulay (Latn, 250,478 speakers), Ekpeye (Latn, 226,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dii (Latn, 71,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Avokaya (Latn, 100,000 speakers), Vute (Latn, 21,000 speakers), Koonzime (Latn, 40,000 speakers), Bafut (Latn, 158,146 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1008,15 +906,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, canadian-aboriginal, old-permic, syriac, tai-le, math, coptic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, old-permic, canadian-aboriginal, tifinagh, malayalam, coptic, math, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -1052,26 +950,8 @@ definitions.</p>
 </div>
 </details>
 
-<details><summary>[13] NotoSansBalinese-Regular.ttf</summary>
+<details><summary>[11] NotoSansBalinese-Regular.ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1381, but got 1363 instead</p>
- [code: ascent]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Check that texts shape as per expectation <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
     <div>
@@ -1089,7 +969,7 @@ definitions.</p>
 <pre><code>Expected: None
 Got     : uni1B13=0+1205|uni1B34=0@-388,-40+0|uni1B14.conj=0+0|uni1B03=0+0|uni1B13=5+1205|uni1B341B03=5@-465,-19+0
 </code></pre>
-<p>Got: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -939 2470 2302" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g24" d="M60.0,394.0Q60.0,460.0 97.0,503.0Q134.0,546.0 210.0,546.0Q348.0,546.0 348.0,380.0L348.0,244.0L409.0,244.0L409.0,251.0Q409.0,340.0 439.0,406.0Q469.0,472.0 528.5,509.0Q588.0,546.0 677.0,546.0Q758.0,546.0 809.5,516.5Q861.0,487.0 880.0,442.0L880.0,536.0L993.0,536.0Q1145.0,536.0 1145.0,383.0L1145.0,0.0L1064.0,0.0L1064.0,387.0Q1064.0,466.0 991.0,466.0L949.0,466.0L949.0,0.0L868.0,0.0L868.0,236.0Q868.0,347.0 818.5,410.5Q769.0,474.0 676.0,474.0Q582.0,474.0 534.5,412.5Q487.0,351.0 487.0,235.0Q556.0,225.0 608.0,207.5Q660.0,190.0 689.0,160.5Q718.0,131.0 718.0,84.0Q718.0,38.0 686.5,14.0Q655.0,-10.0 611.0,-10.0Q573.0,-10.0 536.0,8.0Q499.0,26.0 470.0,59.0Q454.0,78.0 438.5,107.5Q423.0,137.0 415.0,179.0L348.0,179.0L348.0,104.0Q348.0,51.0 321.0,20.5Q294.0,-10.0 243.0,-10.0Q189.0,-10.0 160.0,21.5Q131.0,53.0 131.0,101.0Q131.0,160.0 172.0,196.5Q213.0,233.0 271.0,240.0L271.0,384.0Q271.0,431.0 255.5,452.5Q240.0,474.0 207.0,474.0Q171.0,474.0 153.5,451.0Q136.0,428.0 136.0,387.0Q136.0,335.0 160.0,269.0L103.0,242.0Q60.0,324.0 60.0,394.0ZM202.0,102.0Q202.0,86.0 210.5,71.5Q219.0,57.0 239.0,57.0Q271.0,57.0 271.0,98.0L271.0,172.0Q202.0,154.0 202.0,102.0ZM496.0,167.0Q503.0,136.0 521.0,111.0Q539.0,86.0 562.5,71.0Q586.0,56.0 608.0,56.0Q625.0,56.0 634.5,64.5Q644.0,73.0 644.0,86.0Q644.0,111.0 607.5,133.0Q571.0,155.0 496.0,167.0Z"/> <path id="g58" d="M-389.0,832.0Q-389.0,849.0 -376.5,861.0Q-364.0,873.0 -347.0,873.0Q-332.0,873.0 -319.0,861.0Q-306.0,849.0 -306.0,832.0Q-306.0,813.0 -319.0,802.0Q-332.0,791.0 -347.0,791.0Q-364.0,791.0 -376.5,802.5Q-389.0,814.0 -389.0,832.0ZM-455.0,716.0Q-455.0,733.0 -442.5,745.0Q-430.0,757.0 -413.0,757.0Q-398.0,757.0 -385.0,745.0Q-372.0,733.0 -372.0,716.0Q-372.0,697.0 -385.0,686.0Q-398.0,675.0 -413.0,675.0Q-430.0,675.0 -442.5,686.5Q-455.0,698.0 -455.0,716.0ZM-321.0,716.0Q-321.0,733.0 -308.5,745.0Q-296.0,757.0 -279.0,757.0Q-264.0,757.0 -251.0,745.0Q-238.0,733.0 -238.0,716.0Q-238.0,697.0 -251.0,686.0Q-264.0,675.0 -279.0,675.0Q-296.0,675.0 -308.5,686.5Q-321.0,698.0 -321.0,716.0Z"/> <path id="g178" d="M-181.0,-435.0L-181.0,-303.0Q-181.0,-233.0 -219.5,-198.5Q-258.0,-164.0 -323.0,-164.0Q-397.0,-164.0 -438.5,-207.5Q-480.0,-251.0 -487.0,-316.0L-482.0,-316.0Q-417.0,-316.0 -366.0,-327.0Q-315.0,-338.0 -285.5,-365.0Q-256.0,-392.0 -256.0,-441.0Q-256.0,-490.0 -289.0,-518.5Q-322.0,-547.0 -376.0,-547.0Q-419.0,-547.0 -457.0,-528.5Q-495.0,-510.0 -521.5,-473.0Q-548.0,-436.0 -556.0,-381.0L-607.0,-381.0L-607.0,-401.0Q-607.0,-477.0 -640.5,-512.0Q-674.0,-547.0 -727.0,-547.0Q-778.0,-547.0 -809.0,-517.5Q-840.0,-488.0 -840.0,-444.0Q-840.0,-392.0 -798.5,-361.0Q-757.0,-330.0 -686.0,-323.0L-686.0,-246.0Q-686.0,-202.0 -702.0,-182.5Q-718.0,-163.0 -748.0,-163.0Q-776.0,-163.0 -791.5,-181.0Q-807.0,-199.0 -807.0,-229.0Q-807.0,-245.0 -803.5,-260.5Q-800.0,-276.0 -796.0,-287.0L-848.0,-310.0Q-858.0,-291.0 -866.5,-266.5Q-875.0,-242.0 -875.0,-214.0Q-875.0,-155.0 -837.5,-123.5Q-800.0,-92.0 -742.0,-92.0Q-680.0,-92.0 -643.5,-127.5Q-607.0,-163.0 -607.0,-236.0L-607.0,-317.0L-557.0,-317.0Q-551.0,-259.0 -523.0,-207.5Q-495.0,-156.0 -444.5,-124.0Q-394.0,-92.0 -320.0,-92.0Q-261.0,-92.0 -211.0,-115.0Q-161.0,-138.0 -130.5,-183.5Q-100.0,-229.0 -100.0,-297.0L-100.0,-433.0Q-100.0,-475.0 -70.0,-475.0Q-42.0,-475.0 -3.5,-437.5Q35.0,-400.0 82.0,-330.0L137.0,-367.0Q82.0,-456.0 29.5,-501.5Q-23.0,-547.0 -81.0,-547.0Q-126.0,-547.0 -153.5,-519.0Q-181.0,-491.0 -181.0,-435.0ZM-464.0,-383.0L-484.0,-383.0Q-475.0,-430.0 -447.0,-456.5Q-419.0,-483.0 -382.0,-483.0Q-354.0,-483.0 -342.5,-470.5Q-331.0,-458.0 -331.0,-442.0Q-331.0,-417.0 -361.5,-400.0Q-392.0,-383.0 -464.0,-383.0ZM-686.0,-411.0L-686.0,-386.0Q-718.0,-391.0 -744.0,-404.5Q-770.0,-418.0 -770.0,-447.0Q-770.0,-462.0 -760.5,-473.0Q-751.0,-484.0 -732.0,-484.0Q-713.0,-484.0 -699.5,-470.0Q-686.0,-456.0 -686.0,-411.0Z"/> <path id="g8" d="M-15.0,624.0Q-197.0,624.0 -304.0,691.0Q-411.0,759.0 -444.0,895.0L-375.0,925.0Q-343.0,804.0 -257.0,742.0Q-213.0,711.0 -153.5,695.0Q-94.0,679.0 -15.0,679.0L-15.0,624.0Z"/> <path id="g144" d="M-439.0,832.0Q-439.0,849.0 -426.5,861.0Q-414.0,873.0 -397.0,873.0Q-382.0,873.0 -369.0,861.0Q-356.0,849.0 -356.0,832.0Q-356.0,813.0 -369.0,802.0Q-382.0,791.0 -397.0,791.0Q-414.0,791.0 -426.5,802.5Q-439.0,814.0 -439.0,832.0ZM-505.0,716.0Q-505.0,733.0 -492.5,745.0Q-480.0,757.0 -463.0,757.0Q-448.0,757.0 -435.0,745.0Q-422.0,733.0 -422.0,716.0Q-422.0,697.0 -435.0,686.0Q-448.0,675.0 -463.0,675.0Q-480.0,675.0 -492.5,686.5Q-505.0,698.0 -505.0,716.0ZM-371.0,716.0Q-371.0,733.0 -358.5,745.0Q-346.0,757.0 -329.0,757.0Q-314.0,757.0 -301.0,745.0Q-288.0,733.0 -288.0,716.0Q-288.0,697.0 -301.0,686.0Q-314.0,675.0 -329.0,675.0Q-346.0,675.0 -358.5,686.5Q-371.0,698.0 -371.0,716.0ZM-28.0,612.0Q-103.0,616.0 -163.0,656.0Q-223.0,696.0 -262.5,761.0Q-302.0,826.0 -315.0,905.0L-244.0,920.0Q-231.0,818.0 -173.5,752.5Q-116.0,687.0 -22.0,668.0L-28.0,612.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g24"/> </g> <g transform="translate(817,-40)"> <use href="#g58"/> </g> <g transform="translate(1205,0)"> <use href="#g178"/> </g> <g transform="translate(1205,0)"> <use href="#g8"/> </g> <g transform="translate(1205,0)"> <use href="#g24"/> </g> <g transform="translate(1945,-19)"> <use href="#g144"/> </g> </svg></p>
+<p>Got: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -939 2470 2302" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g23" d="M243.0,-10.0Q189.0,-10.0 160.0,21.5Q131.0,53.0 131.0,101.0Q131.0,160.0 172.0,196.5Q213.0,233.0 271.0,240.0L271.0,384.0Q271.0,431.0 255.5,452.5Q240.0,474.0 207.0,474.0Q171.0,474.0 153.5,451.0Q136.0,428.0 136.0,387.0Q136.0,335.0 160.0,269.0L103.0,242.0Q60.0,324.0 60.0,394.0Q60.0,460.0 97.0,503.0Q134.0,546.0 210.0,546.0Q348.0,546.0 348.0,380.0L348.0,244.0L409.0,244.0L409.0,251.0Q409.0,340.0 439.0,406.0Q469.0,472.0 528.5,509.0Q588.0,546.0 677.0,546.0Q758.0,546.0 809.5,516.5Q861.0,487.0 880.0,442.0L880.0,536.0L993.0,536.0Q1145.0,536.0 1145.0,383.0L1145.0,0.0L1064.0,0.0L1064.0,387.0Q1064.0,466.0 991.0,466.0L949.0,466.0L949.0,0.0L868.0,0.0L868.0,236.0Q868.0,347.0 818.5,410.5Q769.0,474.0 676.0,474.0Q582.0,474.0 534.5,412.5Q487.0,351.0 487.0,235.0Q556.0,225.0 608.0,207.5Q660.0,190.0 689.0,160.5Q718.0,131.0 718.0,84.0Q718.0,38.0 686.5,14.0Q655.0,-10.0 611.0,-10.0Q573.0,-10.0 536.0,8.0Q499.0,26.0 470.0,59.0Q454.0,78.0 438.5,107.5Q423.0,137.0 415.0,179.0L348.0,179.0L348.0,104.0Q348.0,51.0 321.0,20.5Q294.0,-10.0 243.0,-10.0ZM239.0,57.0Q271.0,57.0 271.0,98.0L271.0,172.0Q202.0,154.0 202.0,102.0Q202.0,86.0 210.5,71.5Q219.0,57.0 239.0,57.0ZM608.0,56.0Q625.0,56.0 634.5,64.5Q644.0,73.0 644.0,86.0Q644.0,111.0 607.5,133.0Q571.0,155.0 496.0,167.0Q503.0,136.0 521.0,111.0Q539.0,86.0 562.5,71.0Q586.0,56.0 608.0,56.0Z"/> <path id="g57" d="M-389.0,832.0Q-389.0,849.0 -376.5,861.0Q-364.0,873.0 -347.0,873.0Q-332.0,873.0 -319.0,861.0Q-306.0,849.0 -306.0,832.0Q-306.0,813.0 -319.0,802.0Q-332.0,791.0 -347.0,791.0Q-364.0,791.0 -376.5,802.5Q-389.0,814.0 -389.0,832.0ZM-455.0,716.0Q-455.0,733.0 -442.5,745.0Q-430.0,757.0 -413.0,757.0Q-398.0,757.0 -385.0,745.0Q-372.0,733.0 -372.0,716.0Q-372.0,697.0 -385.0,686.0Q-398.0,675.0 -413.0,675.0Q-430.0,675.0 -442.5,686.5Q-455.0,698.0 -455.0,716.0ZM-321.0,716.0Q-321.0,733.0 -308.5,745.0Q-296.0,757.0 -279.0,757.0Q-264.0,757.0 -251.0,745.0Q-238.0,733.0 -238.0,716.0Q-238.0,697.0 -251.0,686.0Q-264.0,675.0 -279.0,675.0Q-296.0,675.0 -308.5,686.5Q-321.0,698.0 -321.0,716.0Z"/> <path id="g172" d="M-181.0,-435.0L-181.0,-303.0Q-181.0,-233.0 -219.5,-198.5Q-258.0,-164.0 -323.0,-164.0Q-397.0,-164.0 -438.5,-207.5Q-480.0,-251.0 -487.0,-316.0L-482.0,-316.0Q-417.0,-316.0 -366.0,-327.0Q-315.0,-338.0 -285.5,-365.0Q-256.0,-392.0 -256.0,-441.0Q-256.0,-490.0 -289.0,-518.5Q-322.0,-547.0 -376.0,-547.0Q-419.0,-547.0 -457.0,-528.5Q-495.0,-510.0 -521.5,-473.0Q-548.0,-436.0 -556.0,-381.0L-607.0,-381.0L-607.0,-401.0Q-607.0,-477.0 -640.5,-512.0Q-674.0,-547.0 -727.0,-547.0Q-778.0,-547.0 -809.0,-517.5Q-840.0,-488.0 -840.0,-444.0Q-840.0,-392.0 -798.5,-361.0Q-757.0,-330.0 -686.0,-323.0L-686.0,-246.0Q-686.0,-202.0 -702.0,-182.5Q-718.0,-163.0 -748.0,-163.0Q-776.0,-163.0 -791.5,-181.0Q-807.0,-199.0 -807.0,-229.0Q-807.0,-245.0 -803.5,-260.5Q-800.0,-276.0 -796.0,-287.0L-848.0,-310.0Q-858.0,-291.0 -866.5,-266.5Q-875.0,-242.0 -875.0,-214.0Q-875.0,-155.0 -837.5,-123.5Q-800.0,-92.0 -742.0,-92.0Q-680.0,-92.0 -643.5,-127.5Q-607.0,-163.0 -607.0,-236.0L-607.0,-317.0L-557.0,-317.0Q-551.0,-259.0 -523.0,-207.5Q-495.0,-156.0 -444.5,-124.0Q-394.0,-92.0 -320.0,-92.0Q-261.0,-92.0 -211.0,-115.0Q-161.0,-138.0 -130.5,-183.5Q-100.0,-229.0 -100.0,-297.0L-100.0,-433.0Q-100.0,-475.0 -70.0,-475.0Q-42.0,-475.0 -3.5,-437.5Q35.0,-400.0 82.0,-330.0L137.0,-367.0Q82.0,-456.0 29.5,-501.5Q-23.0,-547.0 -81.0,-547.0Q-126.0,-547.0 -153.5,-519.0Q-181.0,-491.0 -181.0,-435.0ZM-464.0,-383.0L-484.0,-383.0Q-475.0,-430.0 -447.0,-456.5Q-419.0,-483.0 -382.0,-483.0Q-354.0,-483.0 -342.5,-470.5Q-331.0,-458.0 -331.0,-442.0Q-331.0,-417.0 -361.5,-400.0Q-392.0,-383.0 -464.0,-383.0ZM-686.0,-411.0L-686.0,-386.0Q-718.0,-391.0 -744.0,-404.5Q-770.0,-418.0 -770.0,-447.0Q-770.0,-462.0 -760.5,-473.0Q-751.0,-484.0 -732.0,-484.0Q-713.0,-484.0 -699.5,-470.0Q-686.0,-456.0 -686.0,-411.0Z"/> <path id="g7" d="M-15.0,624.0Q-197.0,624.0 -304.0,691.0Q-411.0,759.0 -444.0,895.0L-375.0,925.0Q-343.0,804.0 -257.0,742.0Q-213.0,711.0 -153.5,695.0Q-94.0,679.0 -15.0,679.0L-15.0,624.0Z"/> <path id="g138" d="M-439.0,832.0Q-439.0,849.0 -426.5,861.0Q-414.0,873.0 -397.0,873.0Q-382.0,873.0 -369.0,861.0Q-356.0,849.0 -356.0,832.0Q-356.0,813.0 -369.0,802.0Q-382.0,791.0 -397.0,791.0Q-414.0,791.0 -426.5,802.5Q-439.0,814.0 -439.0,832.0ZM-505.0,716.0Q-505.0,733.0 -492.5,745.0Q-480.0,757.0 -463.0,757.0Q-448.0,757.0 -435.0,745.0Q-422.0,733.0 -422.0,716.0Q-422.0,697.0 -435.0,686.0Q-448.0,675.0 -463.0,675.0Q-480.0,675.0 -492.5,686.5Q-505.0,698.0 -505.0,716.0ZM-371.0,716.0Q-371.0,733.0 -358.5,745.0Q-346.0,757.0 -329.0,757.0Q-314.0,757.0 -301.0,745.0Q-288.0,733.0 -288.0,716.0Q-288.0,697.0 -301.0,686.0Q-314.0,675.0 -329.0,675.0Q-346.0,675.0 -358.5,686.5Q-371.0,698.0 -371.0,716.0ZM-28.0,612.0Q-103.0,616.0 -163.0,656.0Q-223.0,696.0 -262.5,761.0Q-302.0,826.0 -315.0,905.0L-244.0,920.0Q-231.0,818.0 -173.5,752.5Q-116.0,687.0 -22.0,668.0L-28.0,612.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g23"/> </g> <g transform="translate(817,-40)"> <use href="#g57"/> </g> <g transform="translate(1205,0)"> <use href="#g172"/> </g> <g transform="translate(1205,0)"> <use href="#g7"/> </g> <g transform="translate(1205,0)"> <use href="#g23"/> </g> <g transform="translate(1945,-19)"> <use href="#g138"/> </g> </svg></p>
 </li>
 </ul>
  [code: shaping-regression]
@@ -1120,11 +1000,11 @@ Got     : uni1B13=0+1205|uni1B34=0@-388,-40+0|uni1B14.conj=0+0|uni1B03=0+0|uni1B
 <tbody>
 <tr>
 <td align="left">nl_Latn (Dutch)</td>
-<td align="left">Shaper didn't attach acutecomb to uni0237</td>
+<td align="left">Shaper didn't attach acutecomb to J</td>
 </tr>
 <tr>
 <td align="left">^</td>
-<td align="left">Shaper didn't attach acutecomb to J</td>
+<td align="left">Shaper didn't attach acutecomb to uni0237</td>
 </tr>
 </tbody>
 </table>
@@ -1152,25 +1032,6 @@ Got     : uni1B13=0+1205|uni1B34=0@-388,-40+0|uni1B14.conj=0+0|uni1B03=0+0|uni1B
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-uni1B3C (U+1B3C)</p>
- [code: mark-chars]
 
 
 
@@ -1236,21 +1097,7 @@ minus</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- _128
-
-- cereg2
-
-- cereg3
-
-- cereg5
-
-- nonmarkingreturn
-
-- uni1B1A.2.nya
-
-- uni1B3A.5
-
-- uni1B3E001
+<pre><code>- uni1B3A.5
 </code></pre>
  [code: unreachable-glyphs]
 
@@ -1340,7 +1187,7 @@ minus</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Igbo (Latn, 27,823,640 speakers), Vute (Latn, 21,000 speakers), Sar (Latn, 500,000 speakers), Dan (Latn, 1,099,244 speakers), Dutch (Latn, 31,709,104 speakers), South Central Banda (Latn, 244,000 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), Lugbara (Latn, 2,200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Bete-Bendi (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Gulay (Latn, 250,478 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Zapotec (Latn, 490,000 speakers), Mundani (Latn, 34,000 speakers), Ebira (Latn, 2,200,000 speakers), Nateni (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Ngbaka (Latn, 1,020,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), South Central Banda (Latn, 244,000 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Dutch (Latn, 31,709,104 speakers), Yala (Latn, 200,000 speakers), Gulay (Latn, 250,478 speakers), Ekpeye (Latn, 226,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dii (Latn, 71,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Avokaya (Latn, 100,000 speakers), Vute (Latn, 21,000 speakers), Koonzime (Latn, 40,000 speakers), Bafut (Latn, 158,146 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1364,15 +1211,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, canadian-aboriginal, old-permic, syriac, tai-le, math, coptic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, old-permic, canadian-aboriginal, tifinagh, malayalam, coptic, math, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -1408,26 +1255,8 @@ definitions.</p>
 </div>
 </details>
 
-<details><summary>[13] NotoSansBalinese-Bold.ttf</summary>
+<details><summary>[11] NotoSansBalinese-Bold.ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 usWinAscent & usWinDescent. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.usWinAscent value should be equal or greater than 1381, but got 1363 instead</p>
- [code: ascent]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
@@ -1449,11 +1278,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">nl_Latn (Dutch)</td>
-<td align="left">Shaper didn't attach acutecomb to uni0237</td>
+<td align="left">Shaper didn't attach acutecomb to J</td>
 </tr>
 <tr>
 <td align="left">^</td>
-<td align="left">Shaper didn't attach acutecomb to J</td>
+<td align="left">Shaper didn't attach acutecomb to uni0237</td>
 </tr>
 </tbody>
 </table>
@@ -1481,25 +1310,6 @@ definitions.</p>
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check mark characters are in GDEF mark glyph class. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.gdef.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following mark characters could be in the GDEF mark glyph class:
-uni1B3C (U+1B3C)</p>
- [code: mark-chars]
 
 
 
@@ -1565,21 +1375,7 @@ minus</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- _128
-
-- cereg2
-
-- cereg3
-
-- cereg5
-
-- nonmarkingreturn
-
-- uni1B1A.2.nya
-
-- uni1B3A.5
-
-- uni1B3E001
+<pre><code>- uni1B3A.5
 </code></pre>
  [code: unreachable-glyphs]
 
@@ -1855,7 +1651,7 @@ minus</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Igbo (Latn, 27,823,640 speakers), Vute (Latn, 21,000 speakers), Sar (Latn, 500,000 speakers), Dan (Latn, 1,099,244 speakers), Dutch (Latn, 31,709,104 speakers), South Central Banda (Latn, 244,000 speakers), Aghem (Latn, 38,843 speakers), Kom (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Makaa (Latn, 221,000 speakers), Lugbara (Latn, 2,200,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Bete-Bendi (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Gulay (Latn, 250,478 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Zapotec (Latn, 490,000 speakers), Mundani (Latn, 34,000 speakers), Ebira (Latn, 2,200,000 speakers), Nateni (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Ngbaka (Latn, 1,020,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Dii (Latn, 71,000 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Makaa (Latn, 221,000 speakers), Mfumte (Latn, 79,000 speakers), Ebira (Latn, 2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), South Central Banda (Latn, 244,000 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Mango (Latn, 77,000 speakers), Dutch (Latn, 31,709,104 speakers), Yala (Latn, 200,000 speakers), Gulay (Latn, 250,478 speakers), Ekpeye (Latn, 226,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Dii (Latn, 71,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Basaa (Latn, 332,940 speakers), Southern Kisi (Latn, 360,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Nateni (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ejagham (Latn, 120,000 speakers), Avokaya (Latn, 100,000 speakers), Vute (Latn, 21,000 speakers), Koonzime (Latn, 40,000 speakers), Bafut (Latn, 158,146 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1879,15 +1675,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, canadian-aboriginal, old-permic, syriac, tai-le, math, coptic</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, old-permic, canadian-aboriginal, tifinagh, malayalam, coptic, math, tai-le</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -1930,8 +1726,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 13 | 43 | 458 | 21 | 415 | 0 | 
-| 0% | 0% | 1% | 5% | 48% | 2% | 44% | 0% | 
+| 0 | 0 | 9 | 39 | 458 | 21 | 423 | 0 | 
+| 0% | 0% | 1% | 4% | 48% | 2% | 45% | 0% | 
 
 
 
