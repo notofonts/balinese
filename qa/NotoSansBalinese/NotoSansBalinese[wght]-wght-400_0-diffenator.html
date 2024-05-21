@@ -3,7 +3,7 @@
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>GFR - Proofer</title>
+    <title>GFR - Glyphs</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style type="text/css">
@@ -143,7 +143,7 @@
 	  
 	    @font-face{
     src: url("old-NotoSansBalinese[wght].ttf");
-    font-family: "old Noto Sans Balinese";
+    font-family: "old font";
     font-weight: 400 700;
     
     font-style: normal;
@@ -153,7 +153,7 @@
 	  
 	    @font-face{
     src: url("new-NotoSansBalinese[wght].ttf");
-    font-family: "new Noto Sans Balinese";
+    font-family: "new font";
     font-weight: 400 700;
     
     font-style: normal;
@@ -163,8 +163,8 @@
 	  
 
 	  
-	    .old-Regular{
-    font-family: "old Noto Sans Balinese", "Adobe NotDef";
+	    .old-wght-400_0{
+    font-family: "old font", "Adobe NotDef";
     font-weight: 400.0;
     
     font-style: normal;
@@ -173,8 +173,8 @@
 	  
 
 	  
-	    .new-Regular{
-    font-family: "new Noto Sans Balinese", "Adobe NotDef";
+	    .new-wght-400_0{
+    font-family: "new font", "Adobe NotDef";
     font-weight: 400.0;
     
     font-style: normal;
@@ -184,33 +184,33 @@
 
 	  
 	
-#toolbar {
-    float:right;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    cursor: default;
-    user-select: none; /* Standard */
-    border: 1px solid black;
-    font-size: 9pt;
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
 }
-#view-button {
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
 }
-#pt-dropdown {
-    padding: 5px;
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
 }
-#pt-selector {
-    background-color: black;
-    color: white;
-}
-#side-by-side {
-    width: 6000px;
-}
-.box-side-by-side {
-    word-break: break-all;
-    float: left;
-    min-width: 200px;
-    max-width: 500px;
+.box-title {
+  clear: both;
 }
 
 
@@ -232,39 +232,40 @@
 			<div id="ot-panel">
 			</div>
 		
-    <div class="nav-item" id="view-button">Line by line</div>
-    <div class="nav-item" id="pt-dropdown">
-        <label for="pt-size">Font Size:</label>
-            <select id="pt-selector" name="pt">
-            <option value="10pt">10pt</option>
-            <option selected="selected" value="20pt">20pt</option>
-            <option value="48pt">48pt</option>
-            <option value="96pt">96pt</option>
-        </select>
-    </div>
-
 	</div>
     <div id="content">
 	<h2>
-<b>Proofer</b>
+<b>Diffenator</b>
 </h2>
 	
-<div id="line-by-line" style="display: block;">
-        
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+      <div data-path="root" data-open="0" id="difftable"></div>
     </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400_0" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
 
     
 
-<div id="font-by-font" style="display: none;">
- 
-</div>
-
-
-<div id="side-by-side" style="display: none;">
- 
-</div>
-
-
+    </div>
+  
+<script>var fontdiff = {"head": {"modified": [3798700799, 3799126896], "checkSumAdjustment": [1668395891, 1667543697]}};</script>
 
     </div>
 </body>
@@ -377,170 +378,131 @@ for (i=0; i<checkboxes.length; i++) {
 	cb.addEventListener("click", enableFeatures)
 }	
     
-    
-state = "line-by-line"
-function viewMode() {
-    var viewButton = document.getElementById("view-button")
-    if (state === "line-by-line") {
-        document.getElementById("line-by-line").style.display = "none"
-        document.getElementById("font-by-font").style.display = "block"
-        document.getElementById("side-by-side").style.display = "none"
-        state = "font-by-font"
-        viewButton.innerHTML = "Font by font"
-    } else if (state === "font-by-font") {
-        document.getElementById("line-by-line").style.display = "none"
-        document.getElementById("font-by-font").style.display = "none"
-        document.getElementById("side-by-side").style.display = "block"
-        state = "side-by-side"
-        setWidth()
-        viewButton.innerHTML = "Side by side"
-    } else if (state === "side-by-side") {
-        document.getElementById("line-by-line").style.display = "block"
-        document.getElementById("font-by-font").style.display = "none"
-        document.getElementById("side-by-side").style.display = "none"
-        state = "line-by-line"
-        viewButton.innerHTML = "Line by line"
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
     }
-}
-document.getElementById("view-button").addEventListener("click", viewMode)
-    
-    var ptSelector = document.getElementById("pt-selector");
-    ptSelector.addEventListener("change", function(e) {
-        var newPtSize = e.target.value
-        textBoxes = document.getElementsByClassName("box-text")
-        for (i=0; i<textBoxes.length; i++) {
-            var textBox = textBoxes[i]
-            textBox.style.fontSize = newPtSize
-        }
-        setWidth()
-    })
-
-// break text for side by side view
-async function breakText() {
-var boxContent = document.getElementsByClassName("box-side-by-side")
-var paragraphs = boxContent[0].getElementsByClassName("box-text")
-
-for (j=0; j<paragraphs.length; j++) {
-    res = []
-    for (i=0; i<boxContent.length; i++) {
-        box = boxContent[i]
-        paras = box.getElementsByClassName("box-text")
-        para = paras[j]
-        breaks = getLineBreaks(para)
-        // populate if empty
-        if (res.length === 0) {
-            res = breaks
-        // replace tighter linebreaks
-        } else {
-            for (k=0; k<breaks.length; k++) {
-                if (k >= res.length) {
-                    res.push(breaks[k])
-                } else if (breaks[k] <= res[k]) {
-                    res[k] = breaks[k]
-                }
-            }
-        }
-
-    }
-    for (ii=0; ii<boxContent.length; ii++) {
-        box = boxContent[ii]
-        paras = box.getElementsByClassName("box-text")
-        para = paras[j]
-        insertBreaks(para, res)
-    }
-}
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
 }
 
-
-function getLineBreaks(elem) {
-const nodes = grabTextNodes(elem);
-for (const node of nodes) { // each node is a big block of text
-    let rangeIndex = 1;
-    let textIndex = 0;
-    let nodeText = node.textContent;
-    const textLength = nodeText.length;
-
-    linebreaks = []
-    prevTop = 0;
-    while (rangeIndex <= textLength) {
-        const range = document.createRange();
-        range.setStart(node, rangeIndex-1);
-        range.setEnd(node, rangeIndex)
-        currentTop = range.getBoundingClientRect().top
-    if (currentTop > prevTop) {
-        if (rangeIndex-2 !== -1) {
-            linebreaks.push(rangeIndex-2)
-        }
-    }
-    rangeIndex += 1;
-    prevTop = currentTop
-    }
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
-return linebreaks
-}
-
-function grabTextNodes(elem) {
-const walker = document.createTreeWalker(elem, NodeFilter.SHOW_TEXT, null);
-const nodes = [];
-while (walker.nextNode()) {
-    nodes.push(walker.currentNode);
-}
-return nodes;
-}
-
-function insertBreaks(node, breaks) {
-console.log(node.innerHTML, breaks)
-newText = ""
-currentText = node.textContent
-for (jj=0; jj<currentText.length; jj++) {
-    if (breaks.includes(jj)) {
-        newText += "<br>"
-    } else {
-        newText += currentText[jj]
-    }
-}
-node.innerHTML = newText
-}
-
-function longestLine() {
-    var paragraphs = document.getElementsByClassName("box-text")
-    var res = 0
-    for (i=0; i<paragraphs.length; i++) {
-        var cur = lineLength(paragraphs[i])
-        res = Math.max(cur, res)
-    }
-    return res
-}
-
-function lineLength(elem) {
-    var node = grabTextNodes(elem)[0]
-    var range = document.createRange()
-    var width = 0
-    for (j=1; j<=node.textContent.length; j++) {
-        var p = j - 1
-        range.setStart(node, p)
-        range.setEnd(node, j)
-        width += range.getBoundingClientRect().width
-    }
-    return width
-}
-
-function setWidth() {
-    var width = longestLine()
-    var container = document.getElementById("side-by-side")
-    var subContainers = container.getElementsByClassName("box-side-by-side")
-    
-    var containerWidth = (width * subContainers.length) + 100
-    container.style.width = containerWidth + "pt"
-
-    for (i=0; i<subContainers.length; i++) {
-        subContainer = subContainers[i]
-        var dist = Math.ceil(width) + "pt"
-        subContainer.style.maxWidth = dist
-    }
-}
-
-
+  
+insertBreaks()
 
 
     </script>
