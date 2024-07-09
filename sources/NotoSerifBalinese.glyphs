@@ -1,7 +1,7 @@
 {
-.appVersion = "3243";
+.appVersion = "3310";
 DisplayStrings = (
-"/uni1B43/uni1B4C"
+"/space/space/space/space/uni1B01/space/space/uni1B36/space/uni1B4C"
 );
 classes = (
 {
@@ -6190,6 +6190,10 @@ glyphname = uni1B36;
 layers = (
 {
 anchors = (
+{
+name = Anchor9;
+position = "{-281, 1044}";
+},
 {
 name = _Anchor22;
 position = "{-269, 620}";
