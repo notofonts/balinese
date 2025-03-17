@@ -260,11 +260,11 @@ value = "Designed by Monotype design team.";
 },
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 },
 {
 name = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 },
 {
 name = trademark;
@@ -6063,6 +6063,10 @@ layers = (
 {
 anchors = (
 {
+name = Anchor22;
+position = "{-228, 991}";
+},
+{
 name = _Anchor22;
 position = "{-230, 620}";
 },
@@ -6190,6 +6194,10 @@ glyphname = uni1B36;
 layers = (
 {
 anchors = (
+{
+name = Anchor9;
+position = "{-281, 1044}";
+},
 {
 name = _Anchor22;
 position = "{-269, 620}";
@@ -21061,5 +21069,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 6;
+versionMinor = 7;
 }
